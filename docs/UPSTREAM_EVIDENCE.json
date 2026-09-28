@@ -1,0 +1,94 @@
+{
+  "date": "2026-09-27",
+  "owner": "YucongDuan",
+  "scope": "Five untruncated Git trees plus PACT directory and two complete source files; not a whole-portfolio audit",
+  "archive_internals_reviewed": false,
+  "upstream_execution_performed": false,
+  "repositories": [
+    {
+      "name": "OmniMemory-OS",
+      "url": "https://github.com/YucongDuan/OmniMemory-OS",
+      "tree_object_sha": "8811996b9e845ef214f3036330af5907cf1d874f",
+      "tree_entries": [
+        "LICENSE",
+        "README.md",
+        "MESH92-OmniMemory-OS-2026-v1.0.0.zip"
+      ],
+      "archive_bytes": 1452883,
+      "review_level": "tree with available README context",
+      "evidence_endpoint": "https://api.github.com/repos/YucongDuan/OmniMemory-OS/git/trees/8811996b9e845ef214f3036330af5907cf1d874f"
+    },
+    {
+      "name": "WorldWeave",
+      "url": "https://github.com/YucongDuan/WorldWeave",
+      "tree_object_sha": "0c6ff7a6e3441ae62ff59ef20c98ad77b11def44",
+      "tree_entries": [
+        "LICENSE",
+        "README.md",
+        "worldweave_system_v0_9.zip"
+      ],
+      "archive_bytes": 62838,
+      "review_level": "tree with available README context",
+      "evidence_endpoint": "https://api.github.com/repos/YucongDuan/WorldWeave/git/trees/0c6ff7a6e3441ae62ff59ef20c98ad77b11def44"
+    },
+    {
+      "name": "DIKWP-NeuroBody-SemanticOS-Platform-Package",
+      "url": "https://github.com/YucongDuan/DIKWP-NeuroBody-SemanticOS-Platform-Package",
+      "tree_object_sha": "cc303795892906a331f7bad2d4f4055898b67dd3",
+      "tree_entries": [
+        "LICENSE",
+        "README.md",
+        "DIKWP_NeuroBody_SemanticOS_Platform_Package.zip"
+      ],
+      "archive_bytes": 351172,
+      "review_level": "tree with available README context",
+      "evidence_endpoint": "https://api.github.com/repos/YucongDuan/DIKWP-NeuroBody-SemanticOS-Platform-Package/git/trees/cc303795892906a331f7bad2d4f4055898b67dd3"
+    },
+    {
+      "name": "C-NOESISCOPE",
+      "url": "https://github.com/YucongDuan/C-NOESISCOPE",
+      "tree_object_sha": "86103f5f480e1b63b4fe333d7d972821027cc7c9",
+      "tree_entries": [
+        "LICENSE",
+        "README.md",
+        "DIKWP_MESH64C_NOESISCOPE_v1.0.0_CN_EN.zip"
+      ],
+      "archive_bytes": 2412409,
+      "review_level": "tree with available README context",
+      "evidence_endpoint": "https://api.github.com/repos/YucongDuan/C-NOESISCOPE/git/trees/86103f5f480e1b63b4fe333d7d972821027cc7c9"
+    },
+    {
+      "name": "DIKWP-ProofLedger-OS",
+      "url": "https://github.com/YucongDuan/DIKWP-ProofLedger-OS",
+      "tree_object_sha": "a9b7729a96de8dabc2a1f5230937d02062afe17c",
+      "tree_entries": [
+        "LICENSE",
+        "README.md",
+        "dikwp_proofledger_os_open_source_app.zip"
+      ],
+      "archive_bytes": 70183,
+      "review_level": "tree with available README context",
+      "evidence_endpoint": "https://api.github.com/repos/YucongDuan/DIKWP-ProofLedger-OS/git/trees/a9b7729a96de8dabc2a1f5230937d02062afe17c"
+    },
+    {
+      "name": "DIKWP-PACT-v0.1.0",
+      "url": "https://github.com/YucongDuan/DIKWP-PACT-v0.1.0",
+      "review_level": "repository, source-directory listing and two full source files",
+      "files": [
+        {
+          "path": "src/dikwp_pact/baselines.py",
+          "blob_sha": "f523a8ab3fbed0fc49f76637128123f23afe36d7"
+        },
+        {
+          "path": "src/dikwp_pact/scoring.py",
+          "blob_sha": "7ed83ee213f98df937793fa4d42b4b5da985000a"
+        }
+      ],
+      "findings": [
+        "Reference confidence reads expected_decision; decision selection itself does not use that label.",
+        "Missing traces are excluded from conditional accuracy; coverage is separate and absent from weighted composite.",
+        "Counts of stage/residual/recovery fields are structural proxies, not verified semantic correctness."
+      ]
+    }
+  ]
+}

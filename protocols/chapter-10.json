@@ -1,0 +1,13 @@
+{
+  "chapter": 10,
+  "control": "Unrelated source and retained historical events",
+  "evaluation_mode": "inspect_result_and_regression_tests",
+  "evidence": "synthetic",
+  "exercise": "Retract the source after recomputation and attempt to read its descendant.",
+  "falsifier": "A descendant remains readable before repair, an unrelated source changes, or replay differs.",
+  "hypothesis": "A source revision invalidates exactly its dependency descendants and preserves unrelated nodes.",
+  "id": "NW-CH10-1",
+  "limit": "Dependencies are explicitly registered; the system does not infer them from arbitrary text.",
+  "parameters": {},
+  "seed": 17
+}

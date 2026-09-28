@@ -1,0 +1,13 @@
+{
+  "chapter": 11,
+  "control": "Identical facts and a zero-resource case",
+  "evaluation_mode": "inspect_result_and_regression_tests",
+  "evidence": "synthetic",
+  "exercise": "Change only the resource budget and inspect action versus evidence state.",
+  "falsifier": "Source-state hashes change when only the declared purpose changes, or the specified purpose contrast gives no action difference.",
+  "hypothesis": "A purpose reversal can change actions while the source-state hash stays fixed.",
+  "id": "NW-CH11-1",
+  "limit": "Utility settings are declared engineering choices, not a measure of moral or experiential value.",
+  "parameters": {},
+  "seed": 17
+}

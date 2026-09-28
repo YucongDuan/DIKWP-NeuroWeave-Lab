@@ -1,0 +1,13 @@
+{
+  "chapter": 18,
+  "control": "Unrelated active source and preserved history",
+  "evaluation_mode": "inspect_result_and_regression_tests",
+  "evidence": "synthetic",
+  "exercise": "Withdraw the source and verify that an unrelated conclusion is retained.",
+  "falsifier": "A withdrawn source regains active descendants without new evidence, or unrelated evidence is lost.",
+  "hypothesis": "An experiment can record a falsifier and preserve history when its supporting source is withdrawn.",
+  "id": "NW-CH18-1",
+  "limit": "A complete software loop is not proof of complete scientific explanation.",
+  "parameters": {},
+  "seed": 17
+}

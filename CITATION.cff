@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Cite the software version and distinguish synthetic results from evidence about biological brains."
+title: "DIKWP NeuroWeave Lab: Executable Companion to A Brief History of the Brain"
+version: 1.0.0
+date-released: 2026-09-27
+type: software
+license: MIT
+authors:
+  - name: "NeuroWeave contributors"
+abstract: "English local-first teaching and research software integrating reconstructive memory, purpose-pinned plans, numerical laboratories, and label-isolated evaluation. Companion book by Yucong Duan and Zhongdao Wu."
+keywords:
+  - DIKWP
+  - reconstructive memory
+  - causal inference
+  - reproducibility
+  - brain-inspired computing
+repository-code: "https://github.com/YucongDuan/DIKWP-NeuroWeave-Lab"
+url: "https://yucongduan.github.io/DIKWP-NeuroWeave-Lab/"

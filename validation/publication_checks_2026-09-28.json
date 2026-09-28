@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-28",
+  "original_archive": "DIKWP_NeuroWeave_Lab_v1.0.0_EN(1).zip",
+  "original_archive_sha256": "46faa5dd8d3a63f3c872dd81809bb104beb87bdf2e192600edaf3b3130a4d0bf",
+  "original_inventory_verified": true,
+  "python": "3.12.14",
+  "tests_passed": 155,
+  "reproduction": "19 reference JSON artifacts reproduced exactly, including the 20-seed synthetic benchmark.",
+  "runtime_source_changes": false,
+  "scope": "Fresh local publication checks; original validation receipts retain their delivery dates. See GitHub Actions for remote platform results."
+}

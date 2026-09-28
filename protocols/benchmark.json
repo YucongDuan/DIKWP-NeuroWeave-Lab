@@ -1,0 +1,37 @@
+{
+  "cases_per_seed": 240,
+  "experimental_unit": "seed",
+  "falsifier": "Paired precision-minus-equal mean Brier difference is >=0",
+  "generator": "balanced Gaussian +/-1 classes, alternating known cue reliabilities",
+  "id": "NW-PERCEPTION-1",
+  "models": [
+    "precision_weighted",
+    "equal_precision",
+    "cue_a_only"
+  ],
+  "prediction": "Precision weighting has lower mean Brier loss than equal precision",
+  "primary_metric": "brier_all_cases_missing_penalty_1",
+  "scope": "Synthetic model check; correctly specified noise is provided to all models",
+  "seeds": [
+    1000,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010,
+    1011,
+    1012,
+    1013,
+    1014,
+    1015,
+    1016,
+    1017,
+    1018,
+    1019
+  ]
+}

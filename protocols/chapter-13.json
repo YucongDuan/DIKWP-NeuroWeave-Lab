@@ -1,0 +1,13 @@
+{
+  "chapter": 13,
+  "control": "Baseline, sham, targeted lesion, report lesion, restored-parameter rescue",
+  "evaluation_mode": "inspect_result_and_regression_tests",
+  "evidence": "synthetic",
+  "exercise": "Compare sham, workspace lesion, report lesion, and parameter-restored rescue.",
+  "falsifier": "Baseline matching fails, the targeted lesion does not distinguish realizations, or a report lesion silently changes latent state.",
+  "hypothesis": "Observationally matched realizations diverge under a targeted internal lesion.",
+  "id": "NW-CH13-1",
+  "limit": "Functional discrimination is not a test proving subjective experience.",
+  "parameters": {},
+  "seed": 17
+}

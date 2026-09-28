@@ -1,0 +1,13 @@
+{
+  "chapter": 14,
+  "control": "Intact report with the same latent dynamics",
+  "evaluation_mode": "inspect_result_and_regression_tests",
+  "evidence": "synthetic",
+  "exercise": "Compare internal lesion and output lesion before interpreting silence.",
+  "falsifier": "The report lesion fails to zero report energy or changes the preserved latent trajectory.",
+  "hypothesis": "Disabling an output channel can eliminate reports while leaving a latent proxy unchanged.",
+  "id": "NW-CH14-1",
+  "limit": "This toy cannot diagnose consciousness, neurological injury, or any medical condition.",
+  "parameters": {},
+  "seed": 17
+}

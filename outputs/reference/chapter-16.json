@@ -1,0 +1,569 @@
+{
+  "biological_validation": false,
+  "chapter": {
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "book": "A Brief History of the Brain",
+    "chapter": 16,
+    "control": "Old plan versus newly reconstructed and confirmed plan",
+    "engine": "integrated",
+    "evidence": "synthetic",
+    "exercise": "Change exactly one of evidence, purpose, consent, or resources; compare state partitions.",
+    "falsifier": "An old plan can be confirmed after purpose/evidence change, or resource/feedback state fails to update after a fresh simulated action.",
+    "hypothesis": "Purpose changes preserve sources; source revisions trigger dependency repair and changed candidate actions.",
+    "id": "chapter-16",
+    "lab_title": "The Book's State Model, Executed",
+    "limit": "This is one finite realization of the book model, not its unique implementation or a brain equation.",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation",
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "title": "From Brain to AI: Semantics, World Models, and Reconstructive Memory"
+  },
+  "evidence_status": "synthetic_software_demonstration",
+  "protocol": {
+    "chapter": 16,
+    "control": "Old plan versus newly reconstructed and confirmed plan",
+    "evaluation_mode": "inspect_result_and_regression_tests",
+    "evidence": "synthetic",
+    "exercise": "Change exactly one of evidence, purpose, consent, or resources; compare state partitions.",
+    "falsifier": "An old plan can be confirmed after purpose/evidence change, or resource/feedback state fails to update after a fresh simulated action.",
+    "hypothesis": "Purpose changes preserve sources; source revisions trigger dependency repair and changed candidate actions.",
+    "id": "NW-CH16-1",
+    "limit": "This is one finite realization of the book model, not its unique implementation or a brain equation.",
+    "parameters": {},
+    "seed": 17
+  },
+  "protocol_hash": "a153fcb26f08269b1d52677bf102ceb23d3bd7ea5569eb56a44b41492e66a186",
+  "result": {
+    "after_evidence_revision": {
+      "B": {
+        "remaining_resource": 5,
+        "unit": "arbitrary resource unit"
+      },
+      "E": {
+        "above_threshold": [
+          "scaled"
+        ],
+        "scaled": [
+          "sensor"
+        ],
+        "sensor": [],
+        "unrelated": []
+      },
+      "K": {
+        "above_threshold": {
+          "context": "trial",
+          "dependencies": [
+            "scaled"
+          ],
+          "dependency_revisions": {
+            "scaled": 1
+          },
+          "evidence_kind": "inference",
+          "id": "above_threshold",
+          "revision": 1,
+          "rule": {
+            "op": "threshold_gt",
+            "threshold": 10
+          },
+          "source": "registered-rule",
+          "status": "stale",
+          "unit": "boolean",
+          "value": 1.0
+        },
+        "scaled": {
+          "context": "trial",
+          "dependencies": [
+            "sensor"
+          ],
+          "dependency_revisions": {
+            "sensor": 1
+          },
+          "evidence_kind": "inference",
+          "id": "scaled",
+          "revision": 1,
+          "rule": {
+            "factor": 2,
+            "op": "scale"
+          },
+          "source": "registered-rule",
+          "status": "stale",
+          "unit": "arbitrary_unit",
+          "value": 12.0
+        }
+      },
+      "O": {
+        "sensor": {
+          "context": "trial",
+          "dependencies": [],
+          "dependency_revisions": {},
+          "evidence_kind": "synthetic",
+          "id": "sensor",
+          "revision": 2,
+          "rule": null,
+          "source": "synthetic://sensor",
+          "status": "active",
+          "unit": "arbitrary_unit",
+          "value": 2.0
+        },
+        "unrelated": {
+          "context": "other-trial",
+          "dependencies": [],
+          "dependency_revisions": {},
+          "evidence_kind": "synthetic",
+          "id": "unrelated",
+          "revision": 1,
+          "rule": null,
+          "source": "synthetic://other",
+          "status": "active",
+          "unit": "arbitrary_unit",
+          "value": 80.0
+        }
+      },
+      "P": {
+        "id": "preservation",
+        "mode": "preserve",
+        "owner": "researcher",
+        "resource_budget": 5,
+        "revision": 2
+      },
+      "V": {
+        "confirmation_required": true,
+        "simulation_only": true,
+        "source_history_required": true
+      }
+    },
+    "after_feedback": {
+      "B": {
+        "remaining_resource": 4.5,
+        "unit": "arbitrary resource unit"
+      },
+      "E": {
+        "above_threshold": [
+          "scaled"
+        ],
+        "feedback:fresh": [],
+        "scaled": [
+          "sensor"
+        ],
+        "sensor": [],
+        "unrelated": []
+      },
+      "K": {
+        "above_threshold": {
+          "context": "trial",
+          "dependencies": [
+            "scaled"
+          ],
+          "dependency_revisions": {
+            "scaled": 2
+          },
+          "evidence_kind": "inference",
+          "id": "above_threshold",
+          "revision": 2,
+          "rule": {
+            "op": "threshold_gt",
+            "threshold": 10
+          },
+          "source": "registered-rule",
+          "status": "active",
+          "unit": "boolean",
+          "value": 0.0
+        },
+        "scaled": {
+          "context": "trial",
+          "dependencies": [
+            "sensor"
+          ],
+          "dependency_revisions": {
+            "sensor": 2
+          },
+          "evidence_kind": "inference",
+          "id": "scaled",
+          "revision": 2,
+          "rule": {
+            "factor": 2,
+            "op": "scale"
+          },
+          "source": "registered-rule",
+          "status": "active",
+          "unit": "arbitrary_unit",
+          "value": 4.0
+        }
+      },
+      "O": {
+        "feedback:fresh": {
+          "context": "local-feedback",
+          "dependencies": [],
+          "dependency_revisions": {},
+          "evidence_kind": "synthetic",
+          "id": "feedback:fresh",
+          "revision": 1,
+          "rule": null,
+          "source": "synthetic://receipt/fresh",
+          "status": "active",
+          "unit": "arbitrary_unit",
+          "value": -0.179572071073816
+        },
+        "sensor": {
+          "context": "trial",
+          "dependencies": [],
+          "dependency_revisions": {},
+          "evidence_kind": "synthetic",
+          "id": "sensor",
+          "revision": 2,
+          "rule": null,
+          "source": "synthetic://sensor",
+          "status": "active",
+          "unit": "arbitrary_unit",
+          "value": 2.0
+        },
+        "unrelated": {
+          "context": "other-trial",
+          "dependencies": [],
+          "dependency_revisions": {},
+          "evidence_kind": "synthetic",
+          "id": "unrelated",
+          "revision": 1,
+          "rule": null,
+          "source": "synthetic://other",
+          "status": "active",
+          "unit": "arbitrary_unit",
+          "value": 80.0
+        }
+      },
+      "P": {
+        "id": "preservation",
+        "mode": "preserve",
+        "owner": "researcher",
+        "resource_budget": 5,
+        "revision": 2
+      },
+      "V": {
+        "confirmation_required": true,
+        "simulation_only": true,
+        "source_history_required": true
+      }
+    },
+    "after_reconstruction": {
+      "B": {
+        "remaining_resource": 5,
+        "unit": "arbitrary resource unit"
+      },
+      "E": {
+        "above_threshold": [
+          "scaled"
+        ],
+        "scaled": [
+          "sensor"
+        ],
+        "sensor": [],
+        "unrelated": []
+      },
+      "K": {
+        "above_threshold": {
+          "context": "trial",
+          "dependencies": [
+            "scaled"
+          ],
+          "dependency_revisions": {
+            "scaled": 2
+          },
+          "evidence_kind": "inference",
+          "id": "above_threshold",
+          "revision": 2,
+          "rule": {
+            "op": "threshold_gt",
+            "threshold": 10
+          },
+          "source": "registered-rule",
+          "status": "active",
+          "unit": "boolean",
+          "value": 0.0
+        },
+        "scaled": {
+          "context": "trial",
+          "dependencies": [
+            "sensor"
+          ],
+          "dependency_revisions": {
+            "sensor": 2
+          },
+          "evidence_kind": "inference",
+          "id": "scaled",
+          "revision": 2,
+          "rule": {
+            "factor": 2,
+            "op": "scale"
+          },
+          "source": "registered-rule",
+          "status": "active",
+          "unit": "arbitrary_unit",
+          "value": 4.0
+        }
+      },
+      "O": {
+        "sensor": {
+          "context": "trial",
+          "dependencies": [],
+          "dependency_revisions": {},
+          "evidence_kind": "synthetic",
+          "id": "sensor",
+          "revision": 2,
+          "rule": null,
+          "source": "synthetic://sensor",
+          "status": "active",
+          "unit": "arbitrary_unit",
+          "value": 2.0
+        },
+        "unrelated": {
+          "context": "other-trial",
+          "dependencies": [],
+          "dependency_revisions": {},
+          "evidence_kind": "synthetic",
+          "id": "unrelated",
+          "revision": 1,
+          "rule": null,
+          "source": "synthetic://other",
+          "status": "active",
+          "unit": "arbitrary_unit",
+          "value": 80.0
+        }
+      },
+      "P": {
+        "id": "preservation",
+        "mode": "preserve",
+        "owner": "researcher",
+        "resource_budget": 5,
+        "revision": 2
+      },
+      "V": {
+        "confirmation_required": true,
+        "simulation_only": true,
+        "source_history_required": true
+      }
+    },
+    "blocked_stale_plans": [
+      "purpose_changed_after_planning",
+      "evidence_changed_after_planning"
+    ],
+    "checkpoint": "c0dadc2cdbd7b1b7c5ecd74926b7a744aa31c98cd1afad318945ae126f10f46c",
+    "decision_value_after": 0.0,
+    "decision_value_before": 1.0,
+    "event_count": 7,
+    "facts_preserved_under_goal_change": true,
+    "feedback_kind": "synthetic",
+    "goal_changed": {
+      "B": {
+        "remaining_resource": 5,
+        "unit": "arbitrary resource unit"
+      },
+      "E": {
+        "above_threshold": [
+          "scaled"
+        ],
+        "scaled": [
+          "sensor"
+        ],
+        "sensor": [],
+        "unrelated": []
+      },
+      "K": {
+        "above_threshold": {
+          "context": "trial",
+          "dependencies": [
+            "scaled"
+          ],
+          "dependency_revisions": {
+            "scaled": 1
+          },
+          "evidence_kind": "inference",
+          "id": "above_threshold",
+          "revision": 1,
+          "rule": {
+            "op": "threshold_gt",
+            "threshold": 10
+          },
+          "source": "registered-rule",
+          "status": "active",
+          "unit": "boolean",
+          "value": 1.0
+        },
+        "scaled": {
+          "context": "trial",
+          "dependencies": [
+            "sensor"
+          ],
+          "dependency_revisions": {
+            "sensor": 1
+          },
+          "evidence_kind": "inference",
+          "id": "scaled",
+          "revision": 1,
+          "rule": {
+            "factor": 2,
+            "op": "scale"
+          },
+          "source": "registered-rule",
+          "status": "active",
+          "unit": "arbitrary_unit",
+          "value": 12.0
+        }
+      },
+      "O": {
+        "sensor": {
+          "context": "trial",
+          "dependencies": [],
+          "dependency_revisions": {},
+          "evidence_kind": "synthetic",
+          "id": "sensor",
+          "revision": 1,
+          "rule": null,
+          "source": "synthetic://sensor",
+          "status": "active",
+          "unit": "arbitrary_unit",
+          "value": 6.0
+        },
+        "unrelated": {
+          "context": "other-trial",
+          "dependencies": [],
+          "dependency_revisions": {},
+          "evidence_kind": "synthetic",
+          "id": "unrelated",
+          "revision": 1,
+          "rule": null,
+          "source": "synthetic://other",
+          "status": "active",
+          "unit": "arbitrary_unit",
+          "value": 80.0
+        }
+      },
+      "P": {
+        "id": "preservation",
+        "mode": "preserve",
+        "owner": "researcher",
+        "resource_budget": 5,
+        "revision": 2
+      },
+      "V": {
+        "confirmation_required": true,
+        "simulation_only": true,
+        "source_history_required": true
+      }
+    },
+    "initial": {
+      "B": {
+        "remaining_resource": 5,
+        "unit": "arbitrary resource unit"
+      },
+      "E": {
+        "above_threshold": [
+          "scaled"
+        ],
+        "scaled": [
+          "sensor"
+        ],
+        "sensor": [],
+        "unrelated": []
+      },
+      "K": {
+        "above_threshold": {
+          "context": "trial",
+          "dependencies": [
+            "scaled"
+          ],
+          "dependency_revisions": {
+            "scaled": 1
+          },
+          "evidence_kind": "inference",
+          "id": "above_threshold",
+          "revision": 1,
+          "rule": {
+            "op": "threshold_gt",
+            "threshold": 10
+          },
+          "source": "registered-rule",
+          "status": "active",
+          "unit": "boolean",
+          "value": 1.0
+        },
+        "scaled": {
+          "context": "trial",
+          "dependencies": [
+            "sensor"
+          ],
+          "dependency_revisions": {
+            "sensor": 1
+          },
+          "evidence_kind": "inference",
+          "id": "scaled",
+          "revision": 1,
+          "rule": {
+            "factor": 2,
+            "op": "scale"
+          },
+          "source": "registered-rule",
+          "status": "active",
+          "unit": "arbitrary_unit",
+          "value": 12.0
+        }
+      },
+      "O": {
+        "sensor": {
+          "context": "trial",
+          "dependencies": [],
+          "dependency_revisions": {},
+          "evidence_kind": "synthetic",
+          "id": "sensor",
+          "revision": 1,
+          "rule": null,
+          "source": "synthetic://sensor",
+          "status": "active",
+          "unit": "arbitrary_unit",
+          "value": 6.0
+        },
+        "unrelated": {
+          "context": "other-trial",
+          "dependencies": [],
+          "dependency_revisions": {},
+          "evidence_kind": "synthetic",
+          "id": "unrelated",
+          "revision": 1,
+          "rule": null,
+          "source": "synthetic://other",
+          "status": "active",
+          "unit": "arbitrary_unit",
+          "value": 80.0
+        }
+      },
+      "P": {
+        "id": "exploration",
+        "mode": "explore",
+        "owner": "researcher",
+        "resource_budget": 5,
+        "revision": 1
+      },
+      "V": {
+        "confirmation_required": true,
+        "simulation_only": true,
+        "source_history_required": true
+      }
+    },
+    "receipt": {
+      "at": 6,
+      "event": "local_simulation_executed",
+      "external_side_effect": false,
+      "fingerprint": "cd17ea12584551fd22dc7b88503506c269ed5cefa7bdadc0dae9269214e38bb1",
+      "id": "fresh"
+    },
+    "replay_equal": true,
+    "resource_after": 4.5,
+    "resource_before": 5,
+    "source_hash_at_start": "4ba1dd4edbd18bf63936b0a70b46cb4c2f3b298aae211b01ff1f49fc248de575"
+  },
+  "result_hash": "d7af52074b9e5015245b5fa81ec58f4beb306da5adf6ed2d303768875dd5c995",
+  "subjective_experience_proven": false,
+  "system": "DIKWP NeuroWeave Lab",
+  "version": "1.0.0"
+}

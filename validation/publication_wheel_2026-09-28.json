@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-28",
+  "wheel": "dikwp_neuroweave_lab-1.0.0-py3-none-any.whl",
+  "sha256": "c592e2048d1272b1ef169d5a9d716b572a0c427351bcf6b795f07ae0765334d1",
+  "clean_venv_install": true,
+  "checks": [
+    {
+      "command": [
+        "-m",
+        "neuroweave",
+        "list"
+      ],
+      "returncode": 0,
+      "stdout_sha256": "b5731402adc8341a3359dd8df9b7c01e9080791fe2617b669c0e252b185d437f"
+    },
+    {
+      "command": [
+        "-m",
+        "neuroweave",
+        "run",
+        "chapter-10"
+      ],
+      "returncode": 0,
+      "stdout_sha256": "ab414dfc32665c600d487cd8a9f087ae689b1d0c9389be07df9630b33b68101f"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "biological_validation": false,
+  "chapter": {
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "book": "A Brief History of the Brain",
+    "chapter": 12,
+    "control": "Exact structured transfer versus a missing-negation transfer",
+    "engine": "semantics",
+    "evidence": "synthetic",
+    "exercise": "Drop the negation field and inspect the semantic-difference report.",
+    "falsifier": "A transfer missing negation is marked faithful by the four-field checker.",
+    "hypothesis": "Structured negation and owner fields can be preserved or detectably lost in a transfer.",
+    "id": "chapter-12",
+    "lab_title": "Meaning Has Conditions and Owners",
+    "limit": "This is schema-level checking, not an automatic natural-language understanding engine.",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation",
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "title": "Language and Social Minds: How Meaning Is Jointly Built"
+  },
+  "evidence_status": "synthetic_software_demonstration",
+  "protocol": {
+    "chapter": 12,
+    "control": "Exact structured transfer versus a missing-negation transfer",
+    "evaluation_mode": "inspect_result_and_regression_tests",
+    "evidence": "synthetic",
+    "exercise": "Drop the negation field and inspect the semantic-difference report.",
+    "falsifier": "A transfer missing negation is marked faithful by the four-field checker.",
+    "hypothesis": "Structured negation and owner fields can be preserved or detectably lost in a transfer.",
+    "id": "NW-CH12-1",
+    "limit": "This is schema-level checking, not an automatic natural-language understanding engine.",
+    "parameters": {},
+    "seed": 17
+  },
+  "protocol_hash": "53d09e8afb7a47acfb4c8bf443ce7f6943a55a23b35111b10ef9089660c0e170",
+  "result": {
+    "correct_transfer": {
+      "changed": [],
+      "faithful": true,
+      "fields_checked": [
+        "owner",
+        "action",
+        "negated",
+        "context"
+      ],
+      "missing": []
+    },
+    "lossy_transfer": {
+      "changed": [],
+      "faithful": false,
+      "fields_checked": [
+        "owner",
+        "action",
+        "negated",
+        "context"
+      ],
+      "missing": [
+        "negated"
+      ]
+    },
+    "scope": "Four declared semantic fields; no natural-language parser",
+    "source": {
+      "action": "share_message",
+      "context": "private",
+      "negated": true,
+      "owner": "person-a"
+    }
+  },
+  "result_hash": "1c185e8df827ca61ec364a55704e58bbe59ec1eab93ca51c48b63925ffad29fc",
+  "subjective_experience_proven": false,
+  "system": "DIKWP NeuroWeave Lab",
+  "version": "1.0.0"
+}

@@ -1,0 +1,13 @@
+{
+  "chapter": 3,
+  "control": "Chain versus cycle at identical gain",
+  "evaluation_mode": "inspect_result_and_regression_tests",
+  "evidence": "synthetic",
+  "exercise": "Set the gain to zero in a copy and inspect loss of propagation.",
+  "falsifier": "The reference cycle fails to retain more terminal activity than the chain.",
+  "hypothesis": "Recurrence prolongs activity relative to a finite chain at the same edge gain.",
+  "id": "NW-CH03-1",
+  "limit": "Graph recurrence alone does not explain the evolutionary origin of neurons.",
+  "parameters": {},
+  "seed": 17
+}

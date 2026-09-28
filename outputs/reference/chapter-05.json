@@ -1,0 +1,69 @@
+{
+  "biological_validation": false,
+  "chapter": {
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "book": "A Brief History of the Brain",
+    "chapter": 5,
+    "control": "Observation-only versus context-preserving policy",
+    "engine": "context",
+    "evidence": "synthetic",
+    "exercise": "Exchange task labels without changing the observation; inspect the selected action.",
+    "falsifier": "An observation-only deterministic policy satisfies both conflicting required actions without extra input.",
+    "hypothesis": "An observation-only deterministic policy cannot satisfy two contrary task requirements.",
+    "id": "chapter-05",
+    "lab_title": "The Same Observation, Two Tasks",
+    "limit": "The context labels are supplied, not learned cultural understanding.",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation",
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "title": "The Emergence of Humans: Tools, Cooperation, and Cumulative Culture"
+  },
+  "evidence_status": "synthetic_software_demonstration",
+  "protocol": {
+    "chapter": 5,
+    "control": "Observation-only versus context-preserving policy",
+    "evaluation_mode": "inspect_result_and_regression_tests",
+    "evidence": "synthetic",
+    "exercise": "Exchange task labels without changing the observation; inspect the selected action.",
+    "falsifier": "An observation-only deterministic policy satisfies both conflicting required actions without extra input.",
+    "hypothesis": "An observation-only deterministic policy cannot satisfy two contrary task requirements.",
+    "id": "NW-CH05-1",
+    "limit": "The context labels are supplied, not learned cultural understanding.",
+    "parameters": {},
+    "seed": 17
+  },
+  "protocol_hash": "fbaeb32ff04c75ce6090d01ed529fad76bb14cdba2fc248c3cf87f4050f9161f",
+  "result": {
+    "context_actions": [
+      "store",
+      "use"
+    ],
+    "context_correct": 2,
+    "contexts": [
+      "preserve_specimen",
+      "consume_for_test"
+    ],
+    "denominator": 2,
+    "observation_only_actions": [
+      "store",
+      "store"
+    ],
+    "observation_only_correct": 1,
+    "observations": [
+      "resource=1",
+      "resource=1"
+    ],
+    "proof_witness": "Equal input to a deterministic function yields equal output; required outputs differ.",
+    "required_actions": [
+      "store",
+      "use"
+    ],
+    "uniqueness_claim": false
+  },
+  "result_hash": "32fb29ce4982a78b16891490b67649f194e47a0bfb54ef7a0491f3dcde9487a8",
+  "subjective_experience_proven": false,
+  "system": "DIKWP NeuroWeave Lab",
+  "version": "1.0.0"
+}

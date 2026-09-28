@@ -1,0 +1,460 @@
+{
+  "biological_validation": false,
+  "chapter": {
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "book": "A Brief History of the Brain",
+    "chapter": 4,
+    "control": "Intact and lesioned topologies",
+    "engine": "network",
+    "evidence": "synthetic",
+    "exercise": "Move the disabled edge in code; distinguish architecture from organism rankings.",
+    "falsifier": "The specified lesion leaves every relevant propagation trajectory unchanged.",
+    "hypothesis": "A lesion changes propagation differently in a chain and cycle.",
+    "id": "chapter-04",
+    "lab_title": "Different Architectures, Different Failure Paths",
+    "limit": "Six-node graphs are neither connectomes nor a ladder of species.",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation",
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "title": "Diverse Brains: Comparative Evolution and Organizational Possibility"
+  },
+  "evidence_status": "synthetic_software_demonstration",
+  "protocol": {
+    "chapter": 4,
+    "control": "Intact and lesioned topologies",
+    "evaluation_mode": "inspect_result_and_regression_tests",
+    "evidence": "synthetic",
+    "exercise": "Move the disabled edge in code; distinguish architecture from organism rankings.",
+    "falsifier": "The specified lesion leaves every relevant propagation trajectory unchanged.",
+    "hypothesis": "A lesion changes propagation differently in a chain and cycle.",
+    "id": "NW-CH04-1",
+    "limit": "Six-node graphs are neither connectomes nor a ladder of species.",
+    "parameters": {},
+    "seed": 17
+  },
+  "protocol_hash": "bd85dc276e51860fe696a2273f49ead402dbbb498478b02203a25664709b4a9f",
+  "result": {
+    "intact": {
+      "lesion_node": null,
+      "networks": {
+        "chain": {
+          "series": [
+            [
+              0,
+              1.0
+            ],
+            [
+              1,
+              0.8
+            ],
+            [
+              2,
+              0.6400000000000001
+            ],
+            [
+              3,
+              0.5120000000000001
+            ],
+            [
+              4,
+              0.40960000000000013
+            ],
+            [
+              5,
+              0.32768000000000014
+            ],
+            [
+              6,
+              0.0
+            ],
+            [
+              7,
+              0.0
+            ],
+            [
+              8,
+              0.0
+            ],
+            [
+              9,
+              0.0
+            ],
+            [
+              10,
+              0.0
+            ],
+            [
+              11,
+              0.0
+            ],
+            [
+              12,
+              0.0
+            ],
+            [
+              13,
+              0.0
+            ],
+            [
+              14,
+              0.0
+            ],
+            [
+              15,
+              0.0
+            ],
+            [
+              16,
+              0.0
+            ],
+            [
+              17,
+              0.0
+            ],
+            [
+              18,
+              0.0
+            ],
+            [
+              19,
+              0.0
+            ],
+            [
+              20,
+              0.0
+            ],
+            [
+              21,
+              0.0
+            ],
+            [
+              22,
+              0.0
+            ],
+            [
+              23,
+              0.0
+            ]
+          ],
+          "terminal_activity": 0.0
+        },
+        "cycle": {
+          "series": [
+            [
+              0,
+              1.0
+            ],
+            [
+              1,
+              0.8
+            ],
+            [
+              2,
+              0.6400000000000001
+            ],
+            [
+              3,
+              0.5120000000000001
+            ],
+            [
+              4,
+              0.40960000000000013
+            ],
+            [
+              5,
+              0.32768000000000014
+            ],
+            [
+              6,
+              0.2621440000000001
+            ],
+            [
+              7,
+              0.2097152000000001
+            ],
+            [
+              8,
+              0.1677721600000001
+            ],
+            [
+              9,
+              0.13421772800000006
+            ],
+            [
+              10,
+              0.10737418240000006
+            ],
+            [
+              11,
+              0.08589934592000005
+            ],
+            [
+              12,
+              0.06871947673600004
+            ],
+            [
+              13,
+              0.054975581388800036
+            ],
+            [
+              14,
+              0.043980465111040035
+            ],
+            [
+              15,
+              0.03518437208883203
+            ],
+            [
+              16,
+              0.028147497671065627
+            ],
+            [
+              17,
+              0.022517998136852502
+            ],
+            [
+              18,
+              0.018014398509482003
+            ],
+            [
+              19,
+              0.014411518807585602
+            ],
+            [
+              20,
+              0.011529215046068483
+            ],
+            [
+              21,
+              0.009223372036854787
+            ],
+            [
+              22,
+              0.00737869762948383
+            ],
+            [
+              23,
+              0.005902958103587064
+            ]
+          ],
+          "terminal_activity": 0.004722366482869652
+        }
+      },
+      "note": "Connectivity toy; not a ranking of living species or an evolutionary reconstruction."
+    },
+    "lesioned": {
+      "lesion_node": 3,
+      "networks": {
+        "chain": {
+          "series": [
+            [
+              0,
+              1.0
+            ],
+            [
+              1,
+              0.8
+            ],
+            [
+              2,
+              0.6400000000000001
+            ],
+            [
+              3,
+              0.0
+            ],
+            [
+              4,
+              0.0
+            ],
+            [
+              5,
+              0.0
+            ],
+            [
+              6,
+              0.0
+            ],
+            [
+              7,
+              0.0
+            ],
+            [
+              8,
+              0.0
+            ],
+            [
+              9,
+              0.0
+            ],
+            [
+              10,
+              0.0
+            ],
+            [
+              11,
+              0.0
+            ],
+            [
+              12,
+              0.0
+            ],
+            [
+              13,
+              0.0
+            ],
+            [
+              14,
+              0.0
+            ],
+            [
+              15,
+              0.0
+            ],
+            [
+              16,
+              0.0
+            ],
+            [
+              17,
+              0.0
+            ],
+            [
+              18,
+              0.0
+            ],
+            [
+              19,
+              0.0
+            ],
+            [
+              20,
+              0.0
+            ],
+            [
+              21,
+              0.0
+            ],
+            [
+              22,
+              0.0
+            ],
+            [
+              23,
+              0.0
+            ]
+          ],
+          "terminal_activity": 0.0
+        },
+        "cycle": {
+          "series": [
+            [
+              0,
+              1.0
+            ],
+            [
+              1,
+              0.8
+            ],
+            [
+              2,
+              0.6400000000000001
+            ],
+            [
+              3,
+              0.0
+            ],
+            [
+              4,
+              0.0
+            ],
+            [
+              5,
+              0.0
+            ],
+            [
+              6,
+              0.0
+            ],
+            [
+              7,
+              0.0
+            ],
+            [
+              8,
+              0.0
+            ],
+            [
+              9,
+              0.0
+            ],
+            [
+              10,
+              0.0
+            ],
+            [
+              11,
+              0.0
+            ],
+            [
+              12,
+              0.0
+            ],
+            [
+              13,
+              0.0
+            ],
+            [
+              14,
+              0.0
+            ],
+            [
+              15,
+              0.0
+            ],
+            [
+              16,
+              0.0
+            ],
+            [
+              17,
+              0.0
+            ],
+            [
+              18,
+              0.0
+            ],
+            [
+              19,
+              0.0
+            ],
+            [
+              20,
+              0.0
+            ],
+            [
+              21,
+              0.0
+            ],
+            [
+              22,
+              0.0
+            ],
+            [
+              23,
+              0.0
+            ]
+          ],
+          "terminal_activity": 0.0
+        }
+      },
+      "note": "Connectivity toy; not a ranking of living species or an evolutionary reconstruction."
+    }
+  },
+  "result_hash": "3fea8532a151020b3b83328c89090ceca5be23d3722fbe72326d1e5b1cc2f8af",
+  "subjective_experience_proven": false,
+  "system": "DIKWP NeuroWeave Lab",
+  "version": "1.0.0"
+}

@@ -1,0 +1,13 @@
+{
+  "chapter": 1,
+  "control": "Incomplete, precise, imprecise, inconsistent and domain-mismatched records",
+  "evaluation_mode": "inspect_result_and_regression_tests",
+  "evidence": "synthetic",
+  "exercise": "Remove the source kind and ask which claim changes without new measurement.",
+  "falsifier": "A synthetic-only record is marked sufficient biological validation.",
+  "hypothesis": "Typed records prevent synthetic results from silently becoming biological validation.",
+  "id": "NW-CH01-1",
+  "limit": "Record provenance is not source authentication or scientific peer review.",
+  "parameters": {},
+  "seed": 17
+}

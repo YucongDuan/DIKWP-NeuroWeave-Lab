@@ -1,0 +1,13 @@
+{
+  "chapter": 12,
+  "control": "Exact structured transfer versus a missing-negation transfer",
+  "evaluation_mode": "inspect_result_and_regression_tests",
+  "evidence": "synthetic",
+  "exercise": "Drop the negation field and inspect the semantic-difference report.",
+  "falsifier": "A transfer missing negation is marked faithful by the four-field checker.",
+  "hypothesis": "Structured negation and owner fields can be preserved or detectably lost in a transfer.",
+  "id": "NW-CH12-1",
+  "limit": "This is schema-level checking, not an automatic natural-language understanding engine.",
+  "parameters": {},
+  "seed": 17
+}

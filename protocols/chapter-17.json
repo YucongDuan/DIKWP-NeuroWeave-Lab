@@ -1,0 +1,13 @@
+{
+  "chapter": 17,
+  "control": "Valid explicitly confirmed local execution",
+  "evaluation_mode": "inspect_result_and_regression_tests",
+  "evidence": "synthetic",
+  "exercise": "Confirm one payload and attempt to execute a modified message.",
+  "falsifier": "An unconfirmed, modified, reused, revoked or expired candidate obtains a local execution receipt.",
+  "hypothesis": "An unconfirmed, revoked, expired, or changed proposal cannot produce even a local execution receipt.",
+  "id": "NW-CH17-1",
+  "limit": "Actor names are simulated identities; no real BCI decoder, authenticated person, or actuator is connected.",
+  "parameters": {},
+  "seed": 17
+}

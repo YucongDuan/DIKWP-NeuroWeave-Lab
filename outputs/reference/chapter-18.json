@@ -1,0 +1,189 @@
+{
+  "biological_validation": false,
+  "chapter": {
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "book": "A Brief History of the Brain",
+    "chapter": 18,
+    "control": "Unrelated active source and preserved history",
+    "engine": "closure",
+    "evidence": "synthetic",
+    "exercise": "Withdraw the source and verify that an unrelated conclusion is retained.",
+    "falsifier": "A withdrawn source regains active descendants without new evidence, or unrelated evidence is lost.",
+    "hypothesis": "An experiment can record a falsifier and preserve history when its supporting source is withdrawn.",
+    "id": "chapter-18",
+    "lab_title": "An Open Future Needs Revisable Claims",
+    "limit": "A complete software loop is not proof of complete scientific explanation.",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation",
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "title": "An Unfinished History: The Open Future of Life, Semantics, and the Brain"
+  },
+  "evidence_status": "synthetic_software_demonstration",
+  "protocol": {
+    "chapter": 18,
+    "control": "Unrelated active source and preserved history",
+    "evaluation_mode": "inspect_result_and_regression_tests",
+    "evidence": "synthetic",
+    "exercise": "Withdraw the source and verify that an unrelated conclusion is retained.",
+    "falsifier": "A withdrawn source regains active descendants without new evidence, or unrelated evidence is lost.",
+    "hypothesis": "An experiment can record a falsifier and preserve history when its supporting source is withdrawn.",
+    "id": "NW-CH18-1",
+    "limit": "A complete software loop is not proof of complete scientific explanation.",
+    "parameters": {},
+    "seed": 17
+  },
+  "protocol_hash": "0422c7727c4faea25d24e8995a4f7ca2cfdb4721d229e31e729f853abe67d5f1",
+  "result": {
+    "affected": [
+      "above_threshold",
+      "scaled"
+    ],
+    "after_withdrawal": {
+      "above_threshold": {
+        "context": "trial",
+        "dependencies": [
+          "scaled"
+        ],
+        "dependency_revisions": {
+          "scaled": 1
+        },
+        "evidence_kind": "inference",
+        "id": "above_threshold",
+        "revision": 1,
+        "rule": {
+          "op": "threshold_gt",
+          "threshold": 10
+        },
+        "source": "registered-rule",
+        "status": "stale",
+        "unit": "boolean",
+        "value": 1.0
+      },
+      "scaled": {
+        "context": "trial",
+        "dependencies": [
+          "sensor"
+        ],
+        "dependency_revisions": {
+          "sensor": 1
+        },
+        "evidence_kind": "inference",
+        "id": "scaled",
+        "revision": 1,
+        "rule": {
+          "factor": 2,
+          "op": "scale"
+        },
+        "source": "registered-rule",
+        "status": "stale",
+        "unit": "arbitrary_unit",
+        "value": 12.0
+      },
+      "sensor": {
+        "context": "trial",
+        "dependencies": [],
+        "dependency_revisions": {},
+        "evidence_kind": "synthetic",
+        "id": "sensor",
+        "revision": 2,
+        "rule": null,
+        "source": "synthetic://sensor",
+        "status": "retracted",
+        "unit": "arbitrary_unit",
+        "value": 6.0
+      },
+      "unrelated": {
+        "context": "other-trial",
+        "dependencies": [],
+        "dependency_revisions": {},
+        "evidence_kind": "synthetic",
+        "id": "unrelated",
+        "revision": 1,
+        "rule": null,
+        "source": "synthetic://other",
+        "status": "active",
+        "unit": "arbitrary_unit",
+        "value": 80.0
+      }
+    },
+    "claim_status": "reopened",
+    "event_count": 6,
+    "falsifier": "Source cannot be independently reproduced",
+    "initial": {
+      "above_threshold": {
+        "context": "trial",
+        "dependencies": [
+          "scaled"
+        ],
+        "dependency_revisions": {
+          "scaled": 1
+        },
+        "evidence_kind": "inference",
+        "id": "above_threshold",
+        "revision": 1,
+        "rule": {
+          "op": "threshold_gt",
+          "threshold": 10
+        },
+        "source": "registered-rule",
+        "status": "active",
+        "unit": "boolean",
+        "value": 1.0
+      },
+      "scaled": {
+        "context": "trial",
+        "dependencies": [
+          "sensor"
+        ],
+        "dependency_revisions": {
+          "sensor": 1
+        },
+        "evidence_kind": "inference",
+        "id": "scaled",
+        "revision": 1,
+        "rule": {
+          "factor": 2,
+          "op": "scale"
+        },
+        "source": "registered-rule",
+        "status": "active",
+        "unit": "arbitrary_unit",
+        "value": 12.0
+      },
+      "sensor": {
+        "context": "trial",
+        "dependencies": [],
+        "dependency_revisions": {},
+        "evidence_kind": "synthetic",
+        "id": "sensor",
+        "revision": 1,
+        "rule": null,
+        "source": "synthetic://sensor",
+        "status": "active",
+        "unit": "arbitrary_unit",
+        "value": 6.0
+      },
+      "unrelated": {
+        "context": "other-trial",
+        "dependencies": [],
+        "dependency_revisions": {},
+        "evidence_kind": "synthetic",
+        "id": "unrelated",
+        "revision": 1,
+        "rule": null,
+        "source": "synthetic://other",
+        "status": "active",
+        "unit": "arbitrary_unit",
+        "value": 80.0
+      }
+    },
+    "ledger_valid": true,
+    "unrelated_preserved": true
+  },
+  "result_hash": "fc674e0911e0942f0522c41c8011368b50f7d69b95b1d00ecbfe93c266294786",
+  "subjective_experience_proven": false,
+  "system": "DIKWP NeuroWeave Lab",
+  "version": "1.0.0"
+}

@@ -1,0 +1,62 @@
+{
+  "biological_validation": false,
+  "chapter": {
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "book": "A Brief History of the Brain",
+    "chapter": 11,
+    "control": "Identical facts and a zero-resource case",
+    "engine": "purpose",
+    "evidence": "synthetic",
+    "exercise": "Change only the resource budget and inspect action versus evidence state.",
+    "falsifier": "Source-state hashes change when only the declared purpose changes, or the specified purpose contrast gives no action difference.",
+    "hypothesis": "A purpose reversal can change actions while the source-state hash stays fixed.",
+    "id": "chapter-11",
+    "lab_title": "Change the Goal, Keep the Facts",
+    "limit": "Utility settings are declared engineering choices, not a measure of moral or experiential value.",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation",
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "title": "The Direction of Action: Emotion, Value, and Purpose"
+  },
+  "evidence_status": "synthetic_software_demonstration",
+  "protocol": {
+    "chapter": 11,
+    "control": "Identical facts and a zero-resource case",
+    "evaluation_mode": "inspect_result_and_regression_tests",
+    "evidence": "synthetic",
+    "exercise": "Change only the resource budget and inspect action versus evidence state.",
+    "falsifier": "Source-state hashes change when only the declared purpose changes, or the specified purpose contrast gives no action difference.",
+    "hypothesis": "A purpose reversal can change actions while the source-state hash stays fixed.",
+    "id": "NW-CH11-1",
+    "limit": "Utility settings are declared engineering choices, not a measure of moral or experiential value.",
+    "parameters": {},
+    "seed": 17
+  },
+  "protocol_hash": "05f1fc762ea19cfe35c5bdc33734224bf1abb01d5d0ba9c655628140be84b389",
+  "result": {
+    "action_a": "sample",
+    "action_b": "rest",
+    "belief": 0.7,
+    "facts_hash_after": "4ba1dd4edbd18bf63936b0a70b46cb4c2f3b298aae211b01ff1f49fc248de575",
+    "facts_hash_before": "4ba1dd4edbd18bf63936b0a70b46cb4c2f3b298aae211b01ff1f49fc248de575",
+    "purpose_a": {
+      "id": "goal-1",
+      "mode": "explore",
+      "owner": "researcher",
+      "resource_budget": 5
+    },
+    "purpose_b": {
+      "id": "goal-2",
+      "mode": "preserve",
+      "owner": "researcher",
+      "resource_budget": 5
+    },
+    "zero_budget_action": "rest"
+  },
+  "result_hash": "a5e9854d41429140a9576a998948a38284ace727023797b535043074ab6d02f7",
+  "subjective_experience_proven": false,
+  "system": "DIKWP NeuroWeave Lab",
+  "version": "1.0.0"
+}

@@ -1,0 +1,13 @@
+{
+  "chapter": 16,
+  "control": "Old plan versus newly reconstructed and confirmed plan",
+  "evaluation_mode": "inspect_result_and_regression_tests",
+  "evidence": "synthetic",
+  "exercise": "Change exactly one of evidence, purpose, consent, or resources; compare state partitions.",
+  "falsifier": "An old plan can be confirmed after purpose/evidence change, or resource/feedback state fails to update after a fresh simulated action.",
+  "hypothesis": "Purpose changes preserve sources; source revisions trigger dependency repair and changed candidate actions.",
+  "id": "NW-CH16-1",
+  "limit": "This is one finite realization of the book model, not its unique implementation or a brain equation.",
+  "parameters": {},
+  "seed": 17
+}

@@ -1,0 +1,13 @@
+{
+  "chapter": 9,
+  "control": "Equal-precision and single-cue ablations",
+  "evaluation_mode": "inspect_result_and_regression_tests",
+  "evidence": "synthetic",
+  "exercise": "Swap cue reliabilities while keeping the prediction interface label-free.",
+  "falsifier": "Mean Brier loss of precision weighting is not lower than equal weighting under the reference Gaussian protocol.",
+  "hypothesis": "Known cue precision improves Brier loss under the specified Gaussian generator.",
+  "id": "NW-CH09-1",
+  "limit": "A correctly specified Gaussian model is an assumption, not evidence of universal perception.",
+  "parameters": {},
+  "seed": 17
+}

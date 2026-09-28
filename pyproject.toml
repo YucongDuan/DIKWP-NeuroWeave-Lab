@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dikwp-neuroweave-lab"
+version = "1.0.0"
+description = "Executable research and teaching companion to A Brief History of the Brain"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+readme = "README.md"
+dependencies = []
+
+[project.scripts]
+neuroweave = "neuroweave.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["neuroweave*"]
+
+[tool.setuptools.package-data]
+neuroweave = ["web/*", "chapters.json"]

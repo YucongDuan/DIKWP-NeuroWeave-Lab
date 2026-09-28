@@ -1,0 +1,13 @@
+{
+  "chapter": 6,
+  "control": "Cumulative average versus adaptive exponential estimator",
+  "evaluation_mode": "inspect_result_and_regression_tests",
+  "evidence": "synthetic",
+  "exercise": "Remove the reversal and compare the cost of fast adaptation.",
+  "falsifier": "The adaptive estimator fails to reduce post-change prediction MSE in the specified reference reversal.",
+  "hypothesis": "An exponential learner adapts more rapidly to the specified reversal than a cumulative average.",
+  "id": "NW-CH06-1",
+  "limit": "Two scalar estimators are not a developmental or synaptic plasticity theory.",
+  "parameters": {},
+  "seed": 17
+}

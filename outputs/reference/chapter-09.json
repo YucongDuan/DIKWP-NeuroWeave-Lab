@@ -1,0 +1,346 @@
+{
+  "biological_validation": false,
+  "chapter": {
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "book": "A Brief History of the Brain",
+    "chapter": 9,
+    "control": "Equal-precision and single-cue ablations",
+    "engine": "perception",
+    "evidence": "synthetic",
+    "exercise": "Swap cue reliabilities while keeping the prediction interface label-free.",
+    "falsifier": "Mean Brier loss of precision weighting is not lower than equal weighting under the reference Gaussian protocol.",
+    "hypothesis": "Known cue precision improves Brier loss under the specified Gaussian generator.",
+    "id": "chapter-09",
+    "lab_title": "Reliable Cues, Calibrated Beliefs",
+    "limit": "A correctly specified Gaussian model is an assumption, not evidence of universal perception.",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation",
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "title": "Perceiving the World: Evidence, Attention, and Active Construction"
+  },
+  "evidence_status": "synthetic_software_demonstration",
+  "protocol": {
+    "chapter": 9,
+    "control": "Equal-precision and single-cue ablations",
+    "evaluation_mode": "inspect_result_and_regression_tests",
+    "evidence": "synthetic",
+    "exercise": "Swap cue reliabilities while keeping the prediction interface label-free.",
+    "falsifier": "Mean Brier loss of precision weighting is not lower than equal weighting under the reference Gaussian protocol.",
+    "hypothesis": "Known cue precision improves Brier loss under the specified Gaussian generator.",
+    "id": "NW-CH09-1",
+    "limit": "A correctly specified Gaussian model is an assumption, not evidence of universal perception.",
+    "parameters": {},
+    "seed": 17
+  },
+  "protocol_hash": "236fa7b7ad1ce69fae776de2394fee43b6d19205350f1bd844248db9b9480fad",
+  "result": {
+    "examples": [
+      {
+        "cue_a": -0.6010788374565486,
+        "cue_b": -5.765197796507788,
+        "id": "s17-c0",
+        "sigma_a": 0.45,
+        "sigma_b": 2.0
+      },
+      {
+        "cue_a": 1.0709644116220465,
+        "cue_b": -2.105742365681494,
+        "id": "s17-c1",
+        "sigma_a": 0.45,
+        "sigma_b": 2.0
+      },
+      {
+        "cue_a": -0.9190396743960196,
+        "cue_b": -0.7017103524492643,
+        "id": "s17-c2",
+        "sigma_a": 0.45,
+        "sigma_b": 2.0
+      },
+      {
+        "cue_a": 0.9922268332899892,
+        "cue_b": -0.5250345580826945,
+        "id": "s17-c3",
+        "sigma_a": 0.45,
+        "sigma_b": 2.0
+      },
+      {
+        "cue_a": -1.3580809340478797,
+        "cue_b": 2.528553420837021,
+        "id": "s17-c4",
+        "sigma_a": 0.45,
+        "sigma_b": 2.0
+      },
+      {
+        "cue_a": -2.3187936663228372,
+        "cue_b": 3.169611687852445,
+        "id": "s17-c5",
+        "sigma_a": 0.45,
+        "sigma_b": 2.0
+      },
+      {
+        "cue_a": 1.351983649082051,
+        "cue_b": -2.769423710743722,
+        "id": "s17-c6",
+        "sigma_a": 0.45,
+        "sigma_b": 2.0
+      },
+      {
+        "cue_a": 0.8413495151800664,
+        "cue_b": -1.4597839709544171,
+        "id": "s17-c7",
+        "sigma_a": 0.45,
+        "sigma_b": 2.0
+      },
+      {
+        "cue_a": -0.8605765755976004,
+        "cue_b": 1.4140453313183854,
+        "id": "s17-c8",
+        "sigma_a": 0.45,
+        "sigma_b": 2.0
+      },
+      {
+        "cue_a": -1.2490093614531352,
+        "cue_b": -2.3169779103796824,
+        "id": "s17-c9",
+        "sigma_a": 0.45,
+        "sigma_b": 2.0
+      },
+      {
+        "cue_a": 1.4740759559976118,
+        "cue_b": 0.1623464768883831,
+        "id": "s17-c10",
+        "sigma_a": 0.45,
+        "sigma_b": 2.0
+      },
+      {
+        "cue_a": -0.4818327614814939,
+        "cue_b": 1.8417516999383152,
+        "id": "s17-c11",
+        "sigma_a": 0.45,
+        "sigma_b": 2.0
+      }
+    ],
+    "interface_contains_labels": false,
+    "scores": {
+      "cue_a_only": {
+        "accuracy_all_cases": 0.9916666666666667,
+        "accuracy_observed_only": 0.9916666666666667,
+        "brier_all_cases_missing_penalty_1": 0.006386441387864839,
+        "calibration_bins_observed_only": [
+          {
+            "bin": 0,
+            "mean_probability": 0.003708033245952952,
+            "n": 116,
+            "positive_fraction": 0
+          },
+          {
+            "bin": 1,
+            "mean_probability": 0.11920869550089007,
+            "n": 2,
+            "positive_fraction": 0
+          },
+          {
+            "bin": 2,
+            "mean_probability": 0.23550746932072392,
+            "n": 2,
+            "positive_fraction": 0.5
+          },
+          {
+            "bin": 3,
+            "mean_probability": null,
+            "n": 0,
+            "positive_fraction": null
+          },
+          {
+            "bin": 4,
+            "mean_probability": 0.47385323683877834,
+            "n": 2,
+            "positive_fraction": 0.5
+          },
+          {
+            "bin": 5,
+            "mean_probability": null,
+            "n": 0,
+            "positive_fraction": null
+          },
+          {
+            "bin": 6,
+            "mean_probability": 0.6233895093022976,
+            "n": 1,
+            "positive_fraction": 1
+          },
+          {
+            "bin": 7,
+            "mean_probability": 0.7430668756823502,
+            "n": 1,
+            "positive_fraction": 1
+          },
+          {
+            "bin": 8,
+            "mean_probability": 0.8327756401538593,
+            "n": 2,
+            "positive_fraction": 1
+          },
+          {
+            "bin": 9,
+            "mean_probability": 0.9970269394294686,
+            "n": 114,
+            "positive_fraction": 1
+          }
+        ],
+        "coverage": 1.0,
+        "n_missing": 0,
+        "n_predicted": 240,
+        "n_total": 240
+      },
+      "equal_precision": {
+        "accuracy_all_cases": 0.825,
+        "accuracy_observed_only": 0.825,
+        "brier_all_cases_missing_penalty_1": 0.12999526535121778,
+        "calibration_bins_observed_only": [
+          {
+            "bin": 0,
+            "mean_probability": 0.01615716848913317,
+            "n": 79,
+            "positive_fraction": 0.0759493670886076
+          },
+          {
+            "bin": 1,
+            "mean_probability": 0.12916717119765492,
+            "n": 12,
+            "positive_fraction": 0.16666666666666666
+          },
+          {
+            "bin": 2,
+            "mean_probability": 0.2480336726565879,
+            "n": 7,
+            "positive_fraction": 0.42857142857142855
+          },
+          {
+            "bin": 3,
+            "mean_probability": 0.34407037137327234,
+            "n": 10,
+            "positive_fraction": 0.3
+          },
+          {
+            "bin": 4,
+            "mean_probability": 0.48039675661855935,
+            "n": 6,
+            "positive_fraction": 0.6666666666666666
+          },
+          {
+            "bin": 5,
+            "mean_probability": 0.5661998320058266,
+            "n": 8,
+            "positive_fraction": 0.5
+          },
+          {
+            "bin": 6,
+            "mean_probability": 0.631167917590383,
+            "n": 2,
+            "positive_fraction": 1
+          },
+          {
+            "bin": 7,
+            "mean_probability": 0.7511789030946672,
+            "n": 14,
+            "positive_fraction": 0.5
+          },
+          {
+            "bin": 8,
+            "mean_probability": 0.8546948919233799,
+            "n": 10,
+            "positive_fraction": 0.6
+          },
+          {
+            "bin": 9,
+            "mean_probability": 0.98579027223999,
+            "n": 92,
+            "positive_fraction": 0.9021739130434783
+          }
+        ],
+        "coverage": 1.0,
+        "n_missing": 0,
+        "n_predicted": 240,
+        "n_total": 240
+      },
+      "precision_weighted": {
+        "accuracy_all_cases": 0.9916666666666667,
+        "accuracy_observed_only": 0.9916666666666667,
+        "brier_all_cases_missing_penalty_1": 0.003952534149402927,
+        "calibration_bins_observed_only": [
+          {
+            "bin": 0,
+            "mean_probability": 0.004544849394375392,
+            "n": 118,
+            "positive_fraction": 0
+          },
+          {
+            "bin": 1,
+            "mean_probability": 0.18930226481286117,
+            "n": 1,
+            "positive_fraction": 0
+          },
+          {
+            "bin": 2,
+            "mean_probability": null,
+            "n": 0,
+            "positive_fraction": null
+          },
+          {
+            "bin": 3,
+            "mean_probability": 0.3535239701370754,
+            "n": 2,
+            "positive_fraction": 0.5
+          },
+          {
+            "bin": 4,
+            "mean_probability": 0.48099165679739453,
+            "n": 1,
+            "positive_fraction": 1
+          },
+          {
+            "bin": 5,
+            "mean_probability": null,
+            "n": 0,
+            "positive_fraction": null
+          },
+          {
+            "bin": 6,
+            "mean_probability": 0.6950116984165849,
+            "n": 1,
+            "positive_fraction": 1
+          },
+          {
+            "bin": 7,
+            "mean_probability": null,
+            "n": 0,
+            "positive_fraction": null
+          },
+          {
+            "bin": 8,
+            "mean_probability": 0.8862687385023331,
+            "n": 1,
+            "positive_fraction": 1
+          },
+          {
+            "bin": 9,
+            "mean_probability": 0.9963361010069219,
+            "n": 116,
+            "positive_fraction": 1
+          }
+        ],
+        "coverage": 1.0,
+        "n_missing": 0,
+        "n_predicted": 240,
+        "n_total": 240
+      }
+    }
+  },
+  "result_hash": "b41f320e15809f9b50459c911e92c0accb2e446b9df2bc9ed698b05873a5dd38",
+  "subjective_experience_proven": false,
+  "system": "DIKWP NeuroWeave Lab",
+  "version": "1.0.0"
+}

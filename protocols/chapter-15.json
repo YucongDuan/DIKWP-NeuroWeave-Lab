@@ -1,0 +1,13 @@
+{
+  "chapter": 15,
+  "control": "Known analytic slope; gamma=0 comparison available",
+  "evaluation_mode": "inspect_result_and_regression_tests",
+  "evidence": "synthetic",
+  "exercise": "Set the confounder coefficient gamma to zero and repeat.",
+  "falsifier": "The paired intervention effect differs from beta under the supplied additive equations.",
+  "hypothesis": "The observational slope differs from the paired do-effect in the confounded structural model.",
+  "id": "NW-CH15-1",
+  "limit": "The graph and equations are supplied. Causality is not automatically identified from observational data.",
+  "parameters": {},
+  "seed": 17
+}

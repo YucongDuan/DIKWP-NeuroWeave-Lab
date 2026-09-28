@@ -1,0 +1,2 @@
+# Optional handbook renderer only; not needed to run or test the system.
+reportlab>=4,<5

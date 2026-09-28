@@ -1,0 +1,13 @@
+{
+  "chapter": 7,
+  "control": "Analytic solution and alternate recording intervals",
+  "evaluation_mode": "inspect_result_and_regression_tests",
+  "evidence": "synthetic",
+  "exercise": "Vary current and recording interval; test subthreshold and suprathreshold cases.",
+  "falsifier": "Recorded crossings differ from the constant-current analytic expression beyond floating-point tolerance.",
+  "hypothesis": "Constant-current spike intervals agree with the analytic LIF expression.",
+  "id": "NW-CH07-1",
+  "limit": "The model does not generate action-potential shape, ion-channel chemistry, or a whole brain.",
+  "parameters": {},
+  "seed": 17
+}

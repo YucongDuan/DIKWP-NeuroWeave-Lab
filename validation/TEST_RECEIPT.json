@@ -1,0 +1,25 @@
+{
+  "system": "DIKWP NeuroWeave Lab",
+  "version": "1.0.0",
+  "date": "2026-09-27",
+  "test_runner": "python -m unittest discover -s tests -v",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "tests_run": 155,
+  "failures": 0,
+  "errors": 0,
+  "status": "passed",
+  "elapsed_seconds": 3.73,
+  "python_source_manifest_sha256": "012a84dcb9b856372d11f169ca82972bf0ef84fbc273ed326baa3aed05996d7f",
+  "core_python_files": 14,
+  "core_python_lines": 1220,
+  "python_files_including_tests_and_scripts": 25,
+  "third_party_runtime_dependencies": [],
+  "remote_github_ci_executed": false,
+  "upstream_archives_executed": false,
+  "examples_executed": [
+    "examples/reconstructive_memory.py",
+    "examples/unified_runtime.py"
+  ],
+  "scope": "Finite local software, numerical and HTTP checks; not biological validation or adversarial security certification"
+}

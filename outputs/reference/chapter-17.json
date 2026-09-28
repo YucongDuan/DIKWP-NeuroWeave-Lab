@@ -1,0 +1,98 @@
+{
+  "biological_validation": false,
+  "chapter": {
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "book": "A Brief History of the Brain",
+    "chapter": 17,
+    "control": "Valid explicitly confirmed local execution",
+    "engine": "consent",
+    "evidence": "synthetic",
+    "exercise": "Confirm one payload and attempt to execute a modified message.",
+    "falsifier": "An unconfirmed, modified, reused, revoked or expired candidate obtains a local execution receipt.",
+    "hypothesis": "An unconfirmed, revoked, expired, or changed proposal cannot produce even a local execution receipt.",
+    "id": "chapter-17",
+    "lab_title": "Prediction, Confirmation, Execution",
+    "limit": "Actor names are simulated identities; no real BCI decoder, authenticated person, or actuator is connected.",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation",
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "title": "Brain-Computer Interfaces: Restoring Channels, Not Speaking for People"
+  },
+  "evidence_status": "synthetic_software_demonstration",
+  "protocol": {
+    "chapter": 17,
+    "control": "Valid explicitly confirmed local execution",
+    "evaluation_mode": "inspect_result_and_regression_tests",
+    "evidence": "synthetic",
+    "exercise": "Confirm one payload and attempt to execute a modified message.",
+    "falsifier": "An unconfirmed, modified, reused, revoked or expired candidate obtains a local execution receipt.",
+    "hypothesis": "An unconfirmed, revoked, expired, or changed proposal cannot produce even a local execution receipt.",
+    "id": "NW-CH17-1",
+    "limit": "Actor names are simulated identities; no real BCI decoder, authenticated person, or actuator is connected.",
+    "parameters": {},
+    "seed": 17
+  },
+  "protocol_hash": "6a0264ca4f57d961e81948664ed2177c2b65df6229d3567a69a9bf67e478bf84",
+  "result": {
+    "audit": [
+      {
+        "at": 0,
+        "event": "candidate",
+        "id": "msg-1"
+      },
+      {
+        "at": 2,
+        "event": "confirmed",
+        "id": "msg-1"
+      },
+      {
+        "at": 4,
+        "event": "local_simulation_executed",
+        "external_side_effect": false,
+        "fingerprint": "9e25945cd6f4f26cbc084ef7b61493ee95de071f489e4ca551380afb435e0cb8",
+        "id": "msg-1"
+      },
+      {
+        "at": 6,
+        "event": "candidate",
+        "id": "msg-2"
+      },
+      {
+        "at": 7,
+        "event": "confirmed",
+        "id": "msg-2"
+      },
+      {
+        "at": 8,
+        "event": "revoked",
+        "id": "msg-2"
+      },
+      {
+        "at": 10,
+        "event": "candidate",
+        "id": "msg-3"
+      }
+    ],
+    "blocked_cases": [
+      "unconfirmed",
+      "payload_change",
+      "replay",
+      "revoked",
+      "expired"
+    ],
+    "identity_authentication": "Not implemented: declared actors inside a local teaching process",
+    "receipt": {
+      "at": 4,
+      "event": "local_simulation_executed",
+      "external_side_effect": false,
+      "fingerprint": "9e25945cd6f4f26cbc084ef7b61493ee95de071f489e4ca551380afb435e0cb8",
+      "id": "msg-1"
+    }
+  },
+  "result_hash": "50f624af107f0ebc781208c5d4880ea9d56ff6fe0d58fea7e499f702beef3181",
+  "subjective_experience_proven": false,
+  "system": "DIKWP NeuroWeave Lab",
+  "version": "1.0.0"
+}

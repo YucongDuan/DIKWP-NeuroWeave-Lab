@@ -1,0 +1,13 @@
+{
+  "chapter": 5,
+  "control": "Observation-only versus context-preserving policy",
+  "evaluation_mode": "inspect_result_and_regression_tests",
+  "evidence": "synthetic",
+  "exercise": "Exchange task labels without changing the observation; inspect the selected action.",
+  "falsifier": "An observation-only deterministic policy satisfies both conflicting required actions without extra input.",
+  "hypothesis": "An observation-only deterministic policy cannot satisfy two contrary task requirements.",
+  "id": "NW-CH05-1",
+  "limit": "The context labels are supplied, not learned cultural understanding.",
+  "parameters": {},
+  "seed": 17
+}

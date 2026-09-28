@@ -1,0 +1,18 @@
+DIKWP NeuroWeave Lab 1.0.0
+Prepared 2026-09-27 as an English companion software delivery.
+
+Book: A Brief History of the Brain
+Book authors: Yucong Duan and Zhongdao Wu
+Manuscript consulted: Brain_History_Duan_Wu_Complete_20260927.docx
+The chapter mappings are original teaching interpretations, not a complete translation.
+The manuscript is not bundled and its publication status is not asserted.
+
+The implementation and documentation were generated with AI assistance for the
+requesting user. No claim is made that the named book authors reviewed the new
+implementation, independently validated its experiments, or approved publication.
+
+Upstream projects are credited as sources of requirements and comparative audit
+observations. Their code archives, fonts, logos, and manuscript content are not copied
+into this release. Source links and exact audit scope are in docs/UPSTREAM_AUDIT.md.
+MIT covers this new implementation and original documentation, not the upstream
+repositories or third-party materials linked by the documentation.

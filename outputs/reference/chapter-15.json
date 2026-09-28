@@ -1,0 +1,54 @@
+{
+  "biological_validation": false,
+  "chapter": {
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "book": "A Brief History of the Brain",
+    "chapter": 15,
+    "control": "Known analytic slope; gamma=0 comparison available",
+    "engine": "causal",
+    "evidence": "synthetic",
+    "exercise": "Set the confounder coefficient gamma to zero and repeat.",
+    "falsifier": "The paired intervention effect differs from beta under the supplied additive equations.",
+    "hypothesis": "The observational slope differs from the paired do-effect in the confounded structural model.",
+    "id": "chapter-15",
+    "lab_title": "Observation Is Not Intervention",
+    "limit": "The graph and equations are supplied. Causality is not automatically identified from observational data.",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation",
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "title": "Seeing, Mapping, and Intervening: From Brain Maps to Causal Models"
+  },
+  "evidence_status": "synthetic_software_demonstration",
+  "protocol": {
+    "chapter": 15,
+    "control": "Known analytic slope; gamma=0 comparison available",
+    "evaluation_mode": "inspect_result_and_regression_tests",
+    "evidence": "synthetic",
+    "exercise": "Set the confounder coefficient gamma to zero and repeat.",
+    "falsifier": "The paired intervention effect differs from beta under the supplied additive equations.",
+    "hypothesis": "The observational slope differs from the paired do-effect in the confounded structural model.",
+    "id": "NW-CH15-1",
+    "limit": "The graph and equations are supplied. Causality is not automatically identified from observational data.",
+    "parameters": {},
+    "seed": 17
+  },
+  "protocol_hash": "114eec07b27c734a1929e463a1e1376e4919da696c3af1ba6931518fe3dee617",
+  "result": {
+    "analytical_observational_slope": 2.0,
+    "equations": [
+      "X=U+epsilon_X",
+      "Y=beta*X+gamma*U+epsilon_Y"
+    ],
+    "n": 4000,
+    "note": "Known synthetic SCM. Exact paired effect follows its additive equations; not discovered human causality.",
+    "observational_slope": 2.0075543081919887,
+    "paired_do_effect": 1.0,
+    "structural_beta": 1.0
+  },
+  "result_hash": "5eca05f40ada8fe033d859c3f30b1472bba43eac434d19c9ea451bf2e7b54f01",
+  "subjective_experience_proven": false,
+  "system": "DIKWP NeuroWeave Lab",
+  "version": "1.0.0"
+}

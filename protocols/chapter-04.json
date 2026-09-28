@@ -1,0 +1,13 @@
+{
+  "chapter": 4,
+  "control": "Intact and lesioned topologies",
+  "evaluation_mode": "inspect_result_and_regression_tests",
+  "evidence": "synthetic",
+  "exercise": "Move the disabled edge in code; distinguish architecture from organism rankings.",
+  "falsifier": "The specified lesion leaves every relevant propagation trajectory unchanged.",
+  "hypothesis": "A lesion changes propagation differently in a chain and cycle.",
+  "id": "NW-CH04-1",
+  "limit": "Six-node graphs are neither connectomes nor a ladder of species.",
+  "parameters": {},
+  "seed": 17
+}

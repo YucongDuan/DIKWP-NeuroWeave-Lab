@@ -1,0 +1,13 @@
+{
+  "chapter": 2,
+  "control": "Always-work policy with the same disturbances",
+  "evaluation_mode": "inspect_result_and_regression_tests",
+  "evidence": "synthetic",
+  "exercise": "Increase resource inflow or work cost and compare energy balance and useful work.",
+  "falsifier": "Resource-aware completed work does not exceed always-work under the reference environment, or the balance residual is nonzero beyond tolerance.",
+  "hypothesis": "A resource-aware controller sustains more completed work than always-work in the specified toy environment.",
+  "id": "NW-CH02-1",
+  "limit": "Arbitrary resource units are not metabolism, entropy, health advice, or evidence of life.",
+  "parameters": {},
+  "seed": 17
+}

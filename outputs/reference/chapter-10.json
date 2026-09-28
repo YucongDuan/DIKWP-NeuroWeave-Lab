@@ -1,0 +1,354 @@
+{
+  "biological_validation": false,
+  "chapter": {
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "book": "A Brief History of the Brain",
+    "chapter": 10,
+    "control": "Unrelated source and retained historical events",
+    "engine": "memory",
+    "evidence": "synthetic",
+    "exercise": "Retract the source after recomputation and attempt to read its descendant.",
+    "falsifier": "A descendant remains readable before repair, an unrelated source changes, or replay differs.",
+    "hypothesis": "A source revision invalidates exactly its dependency descendants and preserves unrelated nodes.",
+    "id": "chapter-10",
+    "lab_title": "Correct the Past Without Inventing It",
+    "limit": "Dependencies are explicitly registered; the system does not infer them from arbitrary text.",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation",
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "title": "The History of Memory: Retention, Reconstruction, and the Future"
+  },
+  "evidence_status": "synthetic_software_demonstration",
+  "protocol": {
+    "chapter": 10,
+    "control": "Unrelated source and retained historical events",
+    "evaluation_mode": "inspect_result_and_regression_tests",
+    "evidence": "synthetic",
+    "exercise": "Retract the source after recomputation and attempt to read its descendant.",
+    "falsifier": "A descendant remains readable before repair, an unrelated source changes, or replay differs.",
+    "hypothesis": "A source revision invalidates exactly its dependency descendants and preserves unrelated nodes.",
+    "id": "NW-CH10-1",
+    "limit": "Dependencies are explicitly registered; the system does not infer them from arbitrary text.",
+    "parameters": {},
+    "seed": 17
+  },
+  "protocol_hash": "e67d3501dd11600d1a09105de7c0764e731ffe95f802b8894f9dd49afc0681cc",
+  "result": {
+    "affected": [
+      "above_threshold",
+      "scaled"
+    ],
+    "after_invalidation": {
+      "above_threshold": {
+        "context": "trial",
+        "dependencies": [
+          "scaled"
+        ],
+        "dependency_revisions": {
+          "scaled": 1
+        },
+        "evidence_kind": "inference",
+        "id": "above_threshold",
+        "revision": 1,
+        "rule": {
+          "op": "threshold_gt",
+          "threshold": 10
+        },
+        "source": "registered-rule",
+        "status": "stale",
+        "unit": "boolean",
+        "value": 1.0
+      },
+      "scaled": {
+        "context": "trial",
+        "dependencies": [
+          "sensor"
+        ],
+        "dependency_revisions": {
+          "sensor": 1
+        },
+        "evidence_kind": "inference",
+        "id": "scaled",
+        "revision": 1,
+        "rule": {
+          "factor": 2,
+          "op": "scale"
+        },
+        "source": "registered-rule",
+        "status": "stale",
+        "unit": "arbitrary_unit",
+        "value": 12.0
+      },
+      "sensor": {
+        "context": "trial",
+        "dependencies": [],
+        "dependency_revisions": {},
+        "evidence_kind": "synthetic",
+        "id": "sensor",
+        "revision": 2,
+        "rule": null,
+        "source": "synthetic://sensor",
+        "status": "active",
+        "unit": "arbitrary_unit",
+        "value": 2.0
+      },
+      "unrelated": {
+        "context": "other-trial",
+        "dependencies": [],
+        "dependency_revisions": {},
+        "evidence_kind": "synthetic",
+        "id": "unrelated",
+        "revision": 1,
+        "rule": null,
+        "source": "synthetic://other",
+        "status": "active",
+        "unit": "arbitrary_unit",
+        "value": 80.0
+      }
+    },
+    "after_recompute": {
+      "above_threshold": {
+        "context": "trial",
+        "dependencies": [
+          "scaled"
+        ],
+        "dependency_revisions": {
+          "scaled": 2
+        },
+        "evidence_kind": "inference",
+        "id": "above_threshold",
+        "revision": 2,
+        "rule": {
+          "op": "threshold_gt",
+          "threshold": 10
+        },
+        "source": "registered-rule",
+        "status": "active",
+        "unit": "boolean",
+        "value": 0.0
+      },
+      "scaled": {
+        "context": "trial",
+        "dependencies": [
+          "sensor"
+        ],
+        "dependency_revisions": {
+          "sensor": 2
+        },
+        "evidence_kind": "inference",
+        "id": "scaled",
+        "revision": 2,
+        "rule": {
+          "factor": 2,
+          "op": "scale"
+        },
+        "source": "registered-rule",
+        "status": "active",
+        "unit": "arbitrary_unit",
+        "value": 4.0
+      },
+      "sensor": {
+        "context": "trial",
+        "dependencies": [],
+        "dependency_revisions": {},
+        "evidence_kind": "synthetic",
+        "id": "sensor",
+        "revision": 2,
+        "rule": null,
+        "source": "synthetic://sensor",
+        "status": "active",
+        "unit": "arbitrary_unit",
+        "value": 2.0
+      },
+      "unrelated": {
+        "context": "other-trial",
+        "dependencies": [],
+        "dependency_revisions": {},
+        "evidence_kind": "synthetic",
+        "id": "unrelated",
+        "revision": 1,
+        "rule": null,
+        "source": "synthetic://other",
+        "status": "active",
+        "unit": "arbitrary_unit",
+        "value": 80.0
+      }
+    },
+    "before": {
+      "above_threshold": {
+        "context": "trial",
+        "dependencies": [
+          "scaled"
+        ],
+        "dependency_revisions": {
+          "scaled": 1
+        },
+        "evidence_kind": "inference",
+        "id": "above_threshold",
+        "revision": 1,
+        "rule": {
+          "op": "threshold_gt",
+          "threshold": 10
+        },
+        "source": "registered-rule",
+        "status": "active",
+        "unit": "boolean",
+        "value": 1.0
+      },
+      "scaled": {
+        "context": "trial",
+        "dependencies": [
+          "sensor"
+        ],
+        "dependency_revisions": {
+          "sensor": 1
+        },
+        "evidence_kind": "inference",
+        "id": "scaled",
+        "revision": 1,
+        "rule": {
+          "factor": 2,
+          "op": "scale"
+        },
+        "source": "registered-rule",
+        "status": "active",
+        "unit": "arbitrary_unit",
+        "value": 12.0
+      },
+      "sensor": {
+        "context": "trial",
+        "dependencies": [],
+        "dependency_revisions": {},
+        "evidence_kind": "synthetic",
+        "id": "sensor",
+        "revision": 1,
+        "rule": null,
+        "source": "synthetic://sensor",
+        "status": "active",
+        "unit": "arbitrary_unit",
+        "value": 6.0
+      },
+      "unrelated": {
+        "context": "other-trial",
+        "dependencies": [],
+        "dependency_revisions": {},
+        "evidence_kind": "synthetic",
+        "id": "unrelated",
+        "revision": 1,
+        "rule": null,
+        "source": "synthetic://other",
+        "status": "active",
+        "unit": "arbitrary_unit",
+        "value": 80.0
+      }
+    },
+    "checkpoint": "1d0dc1c977eec4d1664db220213a2784796e212a8e01f3c77621eb9816a0cf7f",
+    "comparators": {
+      "append_only": "Keeps both readings but does not specify current dependent values",
+      "dependency_memory": "Marks exactly the two descendants stale, then recomputes",
+      "overwrite_without_dependencies": "Updates the source while leaving the two descendants stale in meaning"
+    },
+    "events": [
+      {
+        "hash": "07af1cce59e2d02904d1dd21ba7ce9aa68858b8f54865e04e0821647bfc0f5e2",
+        "kind": "memory.add",
+        "payload": {
+          "context": "trial",
+          "dependencies": [],
+          "evidence_kind": "synthetic",
+          "id": "sensor",
+          "rule": null,
+          "source": "synthetic://sensor",
+          "unit": "arbitrary_unit",
+          "value": 6
+        },
+        "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+        "seq": 1
+      },
+      {
+        "hash": "3e174859016e97e6760c8475edfbd2e2ce8c492e937068a713aee8a2565958c5",
+        "kind": "memory.add",
+        "payload": {
+          "context": "trial",
+          "dependencies": [
+            "sensor"
+          ],
+          "evidence_kind": "inference",
+          "id": "scaled",
+          "rule": {
+            "factor": 2,
+            "op": "scale"
+          },
+          "source": "registered-rule",
+          "unit": "arbitrary_unit",
+          "value": null
+        },
+        "prev": "07af1cce59e2d02904d1dd21ba7ce9aa68858b8f54865e04e0821647bfc0f5e2",
+        "seq": 2
+      },
+      {
+        "hash": "39228ef601c3b6f437a54f39c2b8a4bbbf9a86e4d51bfef912f4dd8454fdc66e",
+        "kind": "memory.add",
+        "payload": {
+          "context": "trial",
+          "dependencies": [
+            "scaled"
+          ],
+          "evidence_kind": "inference",
+          "id": "above_threshold",
+          "rule": {
+            "op": "threshold_gt",
+            "threshold": 10
+          },
+          "source": "registered-rule",
+          "unit": "boolean",
+          "value": null
+        },
+        "prev": "3e174859016e97e6760c8475edfbd2e2ce8c492e937068a713aee8a2565958c5",
+        "seq": 3
+      },
+      {
+        "hash": "68c6424b1a65f65fbb4a75ba6042f0fec8274c031f65c0d36a27756a7ef71c98",
+        "kind": "memory.add",
+        "payload": {
+          "context": "other-trial",
+          "dependencies": [],
+          "evidence_kind": "synthetic",
+          "id": "unrelated",
+          "rule": null,
+          "source": "synthetic://other",
+          "unit": "arbitrary_unit",
+          "value": 80
+        },
+        "prev": "39228ef601c3b6f437a54f39c2b8a4bbbf9a86e4d51bfef912f4dd8454fdc66e",
+        "seq": 4
+      },
+      {
+        "hash": "fe047f179b192037dbd71645048ea3a20b73bc24cdeb3b158c19560879d33f20",
+        "kind": "memory.revise",
+        "payload": {
+          "id": "sensor",
+          "reason": "Synthetic calibration correction",
+          "value": 2
+        },
+        "prev": "68c6424b1a65f65fbb4a75ba6042f0fec8274c031f65c0d36a27756a7ef71c98",
+        "seq": 5
+      },
+      {
+        "hash": "1d0dc1c977eec4d1664db220213a2784796e212a8e01f3c77621eb9816a0cf7f",
+        "kind": "memory.recompute",
+        "payload": {},
+        "prev": "fe047f179b192037dbd71645048ea3a20b73bc24cdeb3b158c19560879d33f20",
+        "seq": 6
+      }
+    ],
+    "replay_equal": true,
+    "unchanged_unrelated": true
+  },
+  "result_hash": "f828dc3fc11ce1645e7c640870b0ed1634977f20f3a620fac63d9930bc464163",
+  "subjective_experience_proven": false,
+  "system": "DIKWP NeuroWeave Lab",
+  "version": "1.0.0"
+}

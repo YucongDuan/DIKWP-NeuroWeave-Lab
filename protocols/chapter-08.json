@@ -1,0 +1,13 @@
+{
+  "chapter": 8,
+  "control": "Identical resource environment under both policies",
+  "evaluation_mode": "inspect_result_and_regression_tests",
+  "evidence": "synthetic",
+  "exercise": "Compare cumulative work with final resources; neither alone defines success.",
+  "falsifier": "Resource conservation fails or the reference recovery policy does not sustain useful work.",
+  "hypothesis": "A controller can preserve its ability to act by accepting short-term rest.",
+  "id": "NW-CH08-1",
+  "limit": "This is not a physiological model of sleep, immunity, or interoception.",
+  "parameters": {},
+  "seed": 17
+}

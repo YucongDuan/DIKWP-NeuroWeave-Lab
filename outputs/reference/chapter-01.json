@@ -1,0 +1,98 @@
+{
+  "biological_validation": false,
+  "chapter": {
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "book": "A Brief History of the Brain",
+    "chapter": 1,
+    "control": "Incomplete, precise, imprecise, inconsistent and domain-mismatched records",
+    "engine": "evidence",
+    "evidence": "synthetic",
+    "exercise": "Remove the source kind and ask which claim changes without new measurement.",
+    "falsifier": "A synthetic-only record is marked sufficient biological validation.",
+    "hypothesis": "Typed records prevent synthetic results from silently becoming biological validation.",
+    "id": "chapter-01",
+    "lab_title": "Evidence Is Not Its Interpretation",
+    "limit": "Record provenance is not source authentication or scientific peer review.",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation",
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "title": "Three Histories: Life, Mind, and Self-Discovery"
+  },
+  "evidence_status": "synthetic_software_demonstration",
+  "protocol": {
+    "chapter": 1,
+    "control": "Incomplete, precise, imprecise, inconsistent and domain-mismatched records",
+    "evaluation_mode": "inspect_result_and_regression_tests",
+    "evidence": "synthetic",
+    "exercise": "Remove the source kind and ask which claim changes without new measurement.",
+    "falsifier": "A synthetic-only record is marked sufficient biological validation.",
+    "hypothesis": "Typed records prevent synthetic results from silently becoming biological validation.",
+    "id": "NW-CH01-1",
+    "limit": "Record provenance is not source authentication or scientific peer review.",
+    "parameters": {},
+    "seed": 17
+  },
+  "protocol_hash": "e55a2fae8865ad3d7be5f7929b533eeec19ce4ed41c4b119cc854e68c7a9fab4",
+  "result": {
+    "biological_claim": {
+      "reason": "Synthetic results and hypotheses alone are not biological validation",
+      "status": "unsupported"
+    },
+    "compatible_intervals": {
+      "has_missing": false,
+      "independent_source_groups": 2,
+      "interval": [
+        2,
+        3
+      ],
+      "note": "Intersection is a compatibility check, not a statistical confidence interval.",
+      "status": "imprecise"
+    },
+    "conflict": {
+      "has_missing": false,
+      "independent_source_groups": 2,
+      "interval": null,
+      "note": "Intersection is a compatibility check, not a statistical confidence interval.",
+      "status": "inconsistent"
+    },
+    "experience_claim": {
+      "reason": "This runtime has no validated experience adjudicator",
+      "status": "unresolved"
+    },
+    "missing": {
+      "independent_source_groups": 1,
+      "interval": null,
+      "status": "incomplete"
+    },
+    "records": [
+      {
+        "context": "same-trial",
+        "high": 3,
+        "id": "a",
+        "kind": "synthetic",
+        "low": 1,
+        "observed_at": "t=0",
+        "source": "synthetic://record",
+        "source_group": "instrument-a",
+        "unit": "mV"
+      },
+      {
+        "context": "same-trial",
+        "high": 4,
+        "id": "b",
+        "kind": "synthetic",
+        "low": 2,
+        "observed_at": "t=0",
+        "source": "synthetic://record",
+        "source_group": "instrument-b",
+        "unit": "mV"
+      }
+    ]
+  },
+  "result_hash": "979ee2c3453972b3ba3a6a8cc1d0755f68bb4b9a0af7c4bf06c74d9d44103f8d",
+  "subjective_experience_proven": false,
+  "system": "DIKWP NeuroWeave Lab",
+  "version": "1.0.0"
+}

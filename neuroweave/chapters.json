@@ -1,0 +1,362 @@
+[
+  {
+    "id": "chapter-01",
+    "chapter": 1,
+    "title": "Three Histories: Life, Mind, and Self-Discovery",
+    "lab_title": "Evidence Is Not Its Interpretation",
+    "engine": "evidence",
+    "hypothesis": "Typed records prevent synthetic results from silently becoming biological validation.",
+    "exercise": "Remove the source kind and ask which claim changes without new measurement.",
+    "limit": "Record provenance is not source authentication or scientific peer review.",
+    "evidence": "synthetic",
+    "falsifier": "A synthetic-only record is marked sufficient biological validation.",
+    "control": "Incomplete, precise, imprecise, inconsistent and domain-mismatched records",
+    "book": "A Brief History of the Brain",
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation"
+  },
+  {
+    "id": "chapter-02",
+    "chapter": 2,
+    "title": "Before Neurons: How Life Maintains Itself",
+    "lab_title": "A Body Has a Budget",
+    "engine": "homeostasis",
+    "hypothesis": "A resource-aware controller sustains more completed work than always-work in the specified toy environment.",
+    "exercise": "Increase resource inflow or work cost and compare energy balance and useful work.",
+    "limit": "Arbitrary resource units are not metabolism, entropy, health advice, or evidence of life.",
+    "evidence": "synthetic",
+    "falsifier": "Resource-aware completed work does not exceed always-work under the reference environment, or the balance residual is nonzero beyond tolerance.",
+    "control": "Always-work policy with the same disturbances",
+    "book": "A Brief History of the Brain",
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation"
+  },
+  {
+    "id": "chapter-03",
+    "chapter": 3,
+    "title": "The Origin of Nervous Systems: From Local Response to Coordination",
+    "lab_title": "Local Signals, Global Coordination",
+    "engine": "network",
+    "hypothesis": "Recurrence prolongs activity relative to a finite chain at the same edge gain.",
+    "exercise": "Set the gain to zero in a copy and inspect loss of propagation.",
+    "limit": "Graph recurrence alone does not explain the evolutionary origin of neurons.",
+    "evidence": "synthetic",
+    "falsifier": "The reference cycle fails to retain more terminal activity than the chain.",
+    "control": "Chain versus cycle at identical gain",
+    "book": "A Brief History of the Brain",
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation"
+  },
+  {
+    "id": "chapter-04",
+    "chapter": 4,
+    "title": "Diverse Brains: Comparative Evolution and Organizational Possibility",
+    "lab_title": "Different Architectures, Different Failure Paths",
+    "engine": "network",
+    "hypothesis": "A lesion changes propagation differently in a chain and cycle.",
+    "exercise": "Move the disabled edge in code; distinguish architecture from organism rankings.",
+    "limit": "Six-node graphs are neither connectomes nor a ladder of species.",
+    "evidence": "synthetic",
+    "falsifier": "The specified lesion leaves every relevant propagation trajectory unchanged.",
+    "control": "Intact and lesioned topologies",
+    "book": "A Brief History of the Brain",
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation"
+  },
+  {
+    "id": "chapter-05",
+    "chapter": 5,
+    "title": "The Emergence of Humans: Tools, Cooperation, and Cumulative Culture",
+    "lab_title": "The Same Observation, Two Tasks",
+    "engine": "context",
+    "hypothesis": "An observation-only deterministic policy cannot satisfy two contrary task requirements.",
+    "exercise": "Exchange task labels without changing the observation; inspect the selected action.",
+    "limit": "The context labels are supplied, not learned cultural understanding.",
+    "evidence": "synthetic",
+    "falsifier": "An observation-only deterministic policy satisfies both conflicting required actions without extra input.",
+    "control": "Observation-only versus context-preserving policy",
+    "book": "A Brief History of the Brain",
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation"
+  },
+  {
+    "id": "chapter-06",
+    "chapter": 6,
+    "title": "The Brain Across a Lifetime: Development, Learning, and Plasticity",
+    "lab_title": "Learning Under a Changing World",
+    "engine": "plasticity",
+    "hypothesis": "An exponential learner adapts more rapidly to the specified reversal than a cumulative average.",
+    "exercise": "Remove the reversal and compare the cost of fast adaptation.",
+    "limit": "Two scalar estimators are not a developmental or synaptic plasticity theory.",
+    "evidence": "synthetic",
+    "falsifier": "The adaptive estimator fails to reduce post-change prediction MSE in the specified reference reversal.",
+    "control": "Cumulative average versus adaptive exponential estimator",
+    "book": "A Brief History of the Brain",
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation"
+  },
+  {
+    "id": "chapter-07",
+    "chapter": 7,
+    "title": "Electricity and Chemistry: The Working Language of Nervous Systems",
+    "lab_title": "A Neuron Model You Can Check",
+    "engine": "lif",
+    "hypothesis": "Constant-current spike intervals agree with the analytic LIF expression.",
+    "exercise": "Vary current and recording interval; test subthreshold and suprathreshold cases.",
+    "limit": "The model does not generate action-potential shape, ion-channel chemistry, or a whole brain.",
+    "evidence": "synthetic",
+    "falsifier": "Recorded crossings differ from the constant-current analytic expression beyond floating-point tolerance.",
+    "control": "Analytic solution and alternate recording intervals",
+    "book": "A Brief History of the Brain",
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation"
+  },
+  {
+    "id": "chapter-08",
+    "chapter": 8,
+    "title": "Brain and Body: Metabolism, Immunity, Interoception, and Sleep",
+    "lab_title": "Rest as a Resource Decision",
+    "engine": "homeostasis",
+    "hypothesis": "A controller can preserve its ability to act by accepting short-term rest.",
+    "exercise": "Compare cumulative work with final resources; neither alone defines success.",
+    "limit": "This is not a physiological model of sleep, immunity, or interoception.",
+    "evidence": "synthetic",
+    "falsifier": "Resource conservation fails or the reference recovery policy does not sustain useful work.",
+    "control": "Identical resource environment under both policies",
+    "book": "A Brief History of the Brain",
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation"
+  },
+  {
+    "id": "chapter-09",
+    "chapter": 9,
+    "title": "Perceiving the World: Evidence, Attention, and Active Construction",
+    "lab_title": "Reliable Cues, Calibrated Beliefs",
+    "engine": "perception",
+    "hypothesis": "Known cue precision improves Brier loss under the specified Gaussian generator.",
+    "exercise": "Swap cue reliabilities while keeping the prediction interface label-free.",
+    "limit": "A correctly specified Gaussian model is an assumption, not evidence of universal perception.",
+    "evidence": "synthetic",
+    "falsifier": "Mean Brier loss of precision weighting is not lower than equal weighting under the reference Gaussian protocol.",
+    "control": "Equal-precision and single-cue ablations",
+    "book": "A Brief History of the Brain",
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation"
+  },
+  {
+    "id": "chapter-10",
+    "chapter": 10,
+    "title": "The History of Memory: Retention, Reconstruction, and the Future",
+    "lab_title": "Correct the Past Without Inventing It",
+    "engine": "memory",
+    "hypothesis": "A source revision invalidates exactly its dependency descendants and preserves unrelated nodes.",
+    "exercise": "Retract the source after recomputation and attempt to read its descendant.",
+    "limit": "Dependencies are explicitly registered; the system does not infer them from arbitrary text.",
+    "evidence": "synthetic",
+    "falsifier": "A descendant remains readable before repair, an unrelated source changes, or replay differs.",
+    "control": "Unrelated source and retained historical events",
+    "book": "A Brief History of the Brain",
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation"
+  },
+  {
+    "id": "chapter-11",
+    "chapter": 11,
+    "title": "The Direction of Action: Emotion, Value, and Purpose",
+    "lab_title": "Change the Goal, Keep the Facts",
+    "engine": "purpose",
+    "hypothesis": "A purpose reversal can change actions while the source-state hash stays fixed.",
+    "exercise": "Change only the resource budget and inspect action versus evidence state.",
+    "limit": "Utility settings are declared engineering choices, not a measure of moral or experiential value.",
+    "evidence": "synthetic",
+    "falsifier": "Source-state hashes change when only the declared purpose changes, or the specified purpose contrast gives no action difference.",
+    "control": "Identical facts and a zero-resource case",
+    "book": "A Brief History of the Brain",
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation"
+  },
+  {
+    "id": "chapter-12",
+    "chapter": 12,
+    "title": "Language and Social Minds: How Meaning Is Jointly Built",
+    "lab_title": "Meaning Has Conditions and Owners",
+    "engine": "semantics",
+    "hypothesis": "Structured negation and owner fields can be preserved or detectably lost in a transfer.",
+    "exercise": "Drop the negation field and inspect the semantic-difference report.",
+    "limit": "This is schema-level checking, not an automatic natural-language understanding engine.",
+    "evidence": "synthetic",
+    "falsifier": "A transfer missing negation is marked faithful by the four-field checker.",
+    "control": "Exact structured transfer versus a missing-negation transfer",
+    "book": "A Brief History of the Brain",
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation"
+  },
+  {
+    "id": "chapter-13",
+    "chapter": 13,
+    "title": "The Boundaries of Consciousness: Experience, Report, and Testable Theories",
+    "lab_title": "Matched Behavior, Different Mechanisms",
+    "engine": "mechanisms",
+    "hypothesis": "Observationally matched realizations diverge under a targeted internal lesion.",
+    "exercise": "Compare sham, workspace lesion, report lesion, and parameter-restored rescue.",
+    "limit": "Functional discrimination is not a test proving subjective experience.",
+    "evidence": "synthetic",
+    "falsifier": "Baseline matching fails, the targeted lesion does not distinguish realizations, or a report lesion silently changes latent state.",
+    "control": "Baseline, sham, targeted lesion, report lesion, restored-parameter rescue",
+    "book": "A Brief History of the Brain",
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation"
+  },
+  {
+    "id": "chapter-14",
+    "chapter": 14,
+    "title": "When Maintenance Fails: Injury, Infection, Degeneration, and Mental Disorders",
+    "lab_title": "Loss of Output Is Not Loss of Every State",
+    "engine": "network",
+    "hypothesis": "Disabling an output channel can eliminate reports while leaving a latent proxy unchanged.",
+    "exercise": "Compare internal lesion and output lesion before interpreting silence.",
+    "limit": "This toy cannot diagnose consciousness, neurological injury, or any medical condition.",
+    "evidence": "synthetic",
+    "falsifier": "The report lesion fails to zero report energy or changes the preserved latent trajectory.",
+    "control": "Intact report with the same latent dynamics",
+    "book": "A Brief History of the Brain",
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation"
+  },
+  {
+    "id": "chapter-15",
+    "chapter": 15,
+    "title": "Seeing, Mapping, and Intervening: From Brain Maps to Causal Models",
+    "lab_title": "Observation Is Not Intervention",
+    "engine": "causal",
+    "hypothesis": "The observational slope differs from the paired do-effect in the confounded structural model.",
+    "exercise": "Set the confounder coefficient gamma to zero and repeat.",
+    "limit": "The graph and equations are supplied. Causality is not automatically identified from observational data.",
+    "evidence": "synthetic",
+    "falsifier": "The paired intervention effect differs from beta under the supplied additive equations.",
+    "control": "Known analytic slope; gamma=0 comparison available",
+    "book": "A Brief History of the Brain",
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation"
+  },
+  {
+    "id": "chapter-16",
+    "chapter": 16,
+    "title": "From Brain to AI: Semantics, World Models, and Reconstructive Memory",
+    "lab_title": "The Book's State Model, Executed",
+    "engine": "integrated",
+    "hypothesis": "Purpose changes preserve sources; source revisions trigger dependency repair and changed candidate actions.",
+    "exercise": "Change exactly one of evidence, purpose, consent, or resources; compare state partitions.",
+    "limit": "This is one finite realization of the book model, not its unique implementation or a brain equation.",
+    "evidence": "synthetic",
+    "falsifier": "An old plan can be confirmed after purpose/evidence change, or resource/feedback state fails to update after a fresh simulated action.",
+    "control": "Old plan versus newly reconstructed and confirmed plan",
+    "book": "A Brief History of the Brain",
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation"
+  },
+  {
+    "id": "chapter-17",
+    "chapter": 17,
+    "title": "Brain-Computer Interfaces: Restoring Channels, Not Speaking for People",
+    "lab_title": "Prediction, Confirmation, Execution",
+    "engine": "consent",
+    "hypothesis": "An unconfirmed, revoked, expired, or changed proposal cannot produce even a local execution receipt.",
+    "exercise": "Confirm one payload and attempt to execute a modified message.",
+    "limit": "Actor names are simulated identities; no real BCI decoder, authenticated person, or actuator is connected.",
+    "evidence": "synthetic",
+    "falsifier": "An unconfirmed, modified, reused, revoked or expired candidate obtains a local execution receipt.",
+    "control": "Valid explicitly confirmed local execution",
+    "book": "A Brief History of the Brain",
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation"
+  },
+  {
+    "id": "chapter-18",
+    "chapter": 18,
+    "title": "An Unfinished History: The Open Future of Life, Semantics, and the Brain",
+    "lab_title": "An Open Future Needs Revisable Claims",
+    "engine": "closure",
+    "hypothesis": "An experiment can record a falsifier and preserve history when its supporting source is withdrawn.",
+    "exercise": "Withdraw the source and verify that an unrelated conclusion is retained.",
+    "limit": "A complete software loop is not proof of complete scientific explanation.",
+    "evidence": "synthetic",
+    "falsifier": "A withdrawn source regains active descendants without new evidence, or unrelated evidence is lost.",
+    "control": "Unrelated active source and preserved history",
+    "book": "A Brief History of the Brain",
+    "authors": [
+      "Yucong Duan",
+      "Zhongdao Wu"
+    ],
+    "source_manuscript": "Brain_History_Duan_Wu_Complete_20260927.docx",
+    "mapping_status": "English teaching interpretation; not a verbatim manuscript translation"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "status": "passed_with_python_http_relay",
+  "browser": "Chromium",
+  "browser_version": "144.0.7559.96",
+  "checked_url_kind": "in-memory assets; real local HTTP API called through a Python test relay",
+  "direct_browser_navigation": "blocked by container administrator policy; not verified",
+  "relay_changes": "fetch is delegated to Python HTTPConnection for this test only; delivered app uses native browser fetch",
+  "checks": [
+    "18 chapter navigation entries loaded",
+    "memory experiment ran in Python and reported equal replay",
+    "LIF parameter change produced displayed time series",
+    "export button produced valid JSON for chosen parameters",
+    "invalid parameter rejected with visible error",
+    "chapter filtering works",
+    "integrated runtime result includes stale-plan rejection",
+    "390-pixel viewport has no horizontal overflow"
+  ],
+  "page_errors": [],
+  "screenshots": [
+    "docs/assets/lab-desktop.png",
+    "docs/assets/lab-mobile.png"
+  ],
+  "scope": "browser smoke test; not an accessibility or production security certification"
+}

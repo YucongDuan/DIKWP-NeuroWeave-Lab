@@ -1,0 +1,106 @@
+{
+  "comparisons": [
+    {
+      "equal": true,
+      "file": "chapter-01.json",
+      "result_hash": "1a594f061de484d3bf3a0e152cd7a909ee5594b1e986343141b9ac389e2eeda9"
+    },
+    {
+      "equal": true,
+      "file": "chapter-02.json",
+      "result_hash": "b9470b1d2259bf7fb64f97a63df8cc6bc37ebef20a2046cdd9f5e6082f77792d"
+    },
+    {
+      "equal": true,
+      "file": "chapter-03.json",
+      "result_hash": "e960a76a2845bb04262eb0eb9d21e835391a451cbf6d58b85b8a43dae3db480b"
+    },
+    {
+      "equal": true,
+      "file": "chapter-04.json",
+      "result_hash": "7b9f4278bb568462cd5ac08e3a00c649993fa6d45823fd57290301114214278f"
+    },
+    {
+      "equal": true,
+      "file": "chapter-05.json",
+      "result_hash": "6417b214f845dee365cfab5d097c86daabd88992e3cf8d3f86590b4da5df80db"
+    },
+    {
+      "equal": true,
+      "file": "chapter-06.json",
+      "result_hash": "4b0351c04b9b8b2cb369e4ac9d77997b43824341ef25f17e3527ceb8985d54ce"
+    },
+    {
+      "equal": true,
+      "file": "chapter-07.json",
+      "result_hash": "cd19a45a923386263c4a3aa4069496afbad5fbb33a84e6a911857546cdf7c6ec"
+    },
+    {
+      "equal": true,
+      "file": "chapter-08.json",
+      "result_hash": "23d6b48bbedefdcdf4813688754993319c84160a60f0a16125e7fb311275994f"
+    },
+    {
+      "equal": true,
+      "file": "chapter-09.json",
+      "result_hash": "b62ab461f9785d70806fae66d1b4a45dc5a58796b9ec781230d41a098aa9c6c8"
+    },
+    {
+      "equal": true,
+      "file": "chapter-10.json",
+      "result_hash": "50ec41806bcda575de9607a68b14b5eebb8a75567e9a58a314b4f758b529f350"
+    },
+    {
+      "equal": true,
+      "file": "chapter-11.json",
+      "result_hash": "5a7e3b6c5baf572103446b7e2371a9cfa732910276019a3a9fa3763be9c26f51"
+    },
+    {
+      "equal": true,
+      "file": "chapter-12.json",
+      "result_hash": "d46ac3ef8f8f3527088591e521f30dbde9b04aaf83333daf4bcb0a80fadf5df6"
+    },
+    {
+      "equal": true,
+      "file": "chapter-13.json",
+      "result_hash": "9d7fb9488fab665fca8c88f796632655518e7ecd935fdb73b0b2d7795ae9aac8"
+    },
+    {
+      "equal": true,
+      "file": "chapter-14.json",
+      "result_hash": "65378728a52463cbd27bb09bfac642fffdc99f7b893904bedc2df41e4d9db867"
+    },
+    {
+      "equal": true,
+      "file": "chapter-15.json",
+      "result_hash": "12a42bbf08f75a2b9eea01c3938c74e141b331edee74be4379b6858413b4e448"
+    },
+    {
+      "equal": true,
+      "file": "chapter-16.json",
+      "result_hash": "dc73158908ac043dcccdc63956c62cfbb68b7c4db98fe3f3f4da9a50b920e66e"
+    },
+    {
+      "equal": true,
+      "file": "chapter-17.json",
+      "result_hash": "7b235b0465800f1a31132a83e22a5f9bf3f1cf3dd0e0b9f4d6e00209f63ce3ad"
+    },
+    {
+      "equal": true,
+      "file": "chapter-18.json",
+      "result_hash": "2d0f0df1a6ef4b774e702eae8c5de1704e113a72b98c6a4547227ee189c772e2"
+    },
+    {
+      "equal": true,
+      "file": "benchmark.json",
+      "result_hash": "e614a4a10b35fac08440e0168bfb707f0c7cc1bdf84d243a580619e8a4c63b4b"
+    }
+  ],
+  "elapsed_seconds": 4.95,
+  "external_validation": false,
+  "mismatches": [],
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "python": "3.13.5",
+  "reference_json_files_compared": 19,
+  "tests_exit_code": 0
+}

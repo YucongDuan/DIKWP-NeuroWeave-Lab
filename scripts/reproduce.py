@@ -11,6 +11,7 @@ import platform
 import subprocess
 import sys
 import time
+import math
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
@@ -18,6 +19,27 @@ from neuroweave.labs import chapters, run_lab
 from neuroweave.evaluation import benchmark
 from neuroweave.reporting import write_report
 from neuroweave.util import atomic_json, digest, load_json
+
+
+def equivalent(left, right):
+    """Compare generated JSON across supported Python versions.
+
+    The reference artifacts are deterministic, but libm can round a handful
+    of transcendental operations in the last bits on different Python builds.
+    Keep the structure and categorical values exact while allowing that
+    platform-level floating-point noise.
+    """
+    if isinstance(left, bool) or isinstance(right, bool):
+        return left == right
+    if isinstance(left, (int, float)) and isinstance(right, (int, float)):
+        return math.isclose(left, right, rel_tol=1e-12, abs_tol=1e-12)
+    if type(left) is not type(right):
+        return False
+    if isinstance(left, dict):
+        return left.keys() == right.keys() and all(equivalent(left[k], right[k]) for k in left)
+    if isinstance(left, list):
+        return len(left) == len(right) and all(equivalent(a, b) for a, b in zip(left, right))
+    return left == right
 
 
 def main() -> int:
@@ -38,7 +60,7 @@ def main() -> int:
             mismatches.append(name)
             comparisons.append({'file':name,'equal':False,'reason':'Required result or reference is missing'})
             continue
-        same=load_json(p)==load_json(reference)
+        same=equivalent(load_json(p),load_json(reference))
         comparisons.append({'file':name,'equal':same,'result_hash':digest(load_json(p))})
         if not same:mismatches.append(name)
     receipt={'python':platform.python_version(),'platform':platform.platform(),'tests_exit_code':test.returncode,

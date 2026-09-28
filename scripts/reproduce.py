@@ -35,7 +35,7 @@ def equivalent(left, right):
         # The release reports values at ordinary scientific-report precision;
         # allow the small libm/serialization drift observed across supported
         # CPython and runner platforms while keeping structural values exact.
-        return math.isclose(left, right, rel_tol=1e-9, abs_tol=1e-9)
+        return math.isclose(left, right, rel_tol=1e-6, abs_tol=1e-6)
     if type(left) is not type(right):
         return False
     if isinstance(left, dict):

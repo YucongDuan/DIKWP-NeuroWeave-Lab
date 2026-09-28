@@ -32,7 +32,10 @@ def equivalent(left, right):
     if isinstance(left, bool) or isinstance(right, bool):
         return left == right
     if isinstance(left, (int, float)) and isinstance(right, (int, float)):
-        return math.isclose(left, right, rel_tol=1e-12, abs_tol=1e-12)
+        # The release reports values at ordinary scientific-report precision;
+        # allow the small libm/serialization drift observed across supported
+        # CPython and runner platforms while keeping structural values exact.
+        return math.isclose(left, right, rel_tol=1e-9, abs_tol=1e-9)
     if type(left) is not type(right):
         return False
     if isinstance(left, dict):
